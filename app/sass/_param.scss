@@ -303,7 +303,7 @@ a,button{
 .w_150{
 	width: 150px !important;
 }
-h1{
+h1,.h1{
 	font-weight: 500;
 	font-size: 24px;
 	line-height: 26px;
@@ -314,21 +314,37 @@ h3{
 	color: #5f6b7b;
 }
 .gray_light{
-	background: #f8f9fb;
+	background: #f8f9fb !important;
 }
 .styled_title{
+	padding-bottom: 16px;
+	position: relative;
+	&:after{
+		content: '';
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		height: 2px;
+		width: 40px;
+		background: #38c173;
+	}
 	span{
-		position: relative;
-		padding-bottom: 16px;
-		display: block;
-		&:after{
-			content: '';
-			bottom: 0;
-			left: 0;
-			position: absolute;
-			height: 2px;
-			width: 40px;
-			background: #38c173;
+		padding-right: 20px;
+	}
+	// span,a{
+	// 	display: inline-block;
+	// 	vertical-align: middle;
+	// }
+	a{
+		font-size: 12px;
+		line-height: 14px;
+		text-decoration: underline;
+		color: #38c173;
+		position: relative; 
+		top: -3px;
+
+		&:hover{
+			text-decoration: none;
 		}
 	}
 }

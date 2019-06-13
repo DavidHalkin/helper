@@ -153,3 +153,18 @@
 		}
 	}
 }
+.list_enter{
+	height: 56px;
+	li{
+		padding: 0 20px;
+		@include media-breakpoint-down(xs) {
+			padding: 0 7px;
+		}
+		&:last-child{
+			padding-right: 0;
+		}
+	}
+	a{
+		color: #5f6b7b;
+	}
+}
