@@ -1,0 +1,155 @@
+.header{
+	background: #fff;
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	&:after{
+		content: '';
+		width: 100%;
+		height: 8px;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		display: block;
+		background: linear-gradient(rgba(9,7,4,0.06) 0%, rgba(9,7,4,0) 100%) repeat-x;
+	}
+	.navbar-brand{
+		padding: 0;
+		max-width: 188px;
+		flex:0 0 188px;
+		@include media-breakpoint-down(xs) {
+			max-width: 120px;
+			flex:0 0 120px;
+		}
+		img{
+			display: block;
+			width: 100%;
+		}
+	}
+	.balans{
+		color: #8895a6;
+		line-height: 16px;
+		i{
+			padding-right: 5px;
+		}
+		a{
+			text-decoration: underline;
+			color: #259c5a;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+	.main_nav{
+		>li{
+			border-left: 1px solid #cfd6de;
+			
+			&.nav_fixed{
+				a{
+					display: block;
+					height: 60px;
+					width: 60px;
+					padding: 0;
+					position: relative;
+					em{
+						font-style: normal;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						margin-top: 3px;
+						transform:translate(-50%,-50%);
+						
+					}
+					.icn{
+						font-size: 18px;
+						color: #8895a6;
+						line-height: 1;
+						
+					}
+				}
+				.budget_inf{
+					display: none;
+				}
+				&.active{
+					a{
+						.budget_inf{
+							display: block;
+						}
+					}
+				}
+			}
+			@include media-breakpoint-down(xs) {
+				border-left: 0;
+				&.nav_fixed{
+					a{
+						height: 35px;
+						width: 35px;
+					}
+				}
+			}
+
+		}
+		.dropdown{
+			.dropdown-menu{
+				width:270px;
+			}
+			&.dropdown_user{
+				.dropdown-menu{
+					overflow: auto;
+					max-height: 200px;
+				}
+			}
+			em{
+				font-style: normal;
+				position: relative;
+				margin-right: 5px;
+			}
+			.balans_li{
+				a{
+					font-size: 12px;
+					line-height: 14px;
+					color: #38c173;
+					display: block;
+					padding-left: 43px;
+				}
+			}
+			span{
+				font-size: 15px;
+				color: #000;
+			}
+			i{
+				display: inline-block;
+				vertical-align: middle;
+				
+				position: relative;
+				font-size: 15px;
+				line-height: 1;
+			}
+			.dropdown-item{
+				padding: 5px 15px !important;
+				font-size: 15px;
+
+				&:hover,&:focus,&:active{
+					color: #38c173;
+					background: none;
+				}
+			}
+			> a{
+				color: #5f6b7b;
+
+			}
+			
+		}
+		.user_img{
+			img{
+				max-width: 40px;
+				border-radius: 50%;
+				@include media-breakpoint-down(xs) {
+					max-width: 30px;
+				}
+			}
+		}
+	}
+}

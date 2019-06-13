@@ -1,0 +1,33 @@
+.footer{
+	background: #222;
+	border-top: 5px solid #38c173;
+	.copy{
+		background: #1d1d1d;
+		font-size: 12px;
+		line-height: 29px;
+		color: #656565;
+	}
+	h4{
+		margin: 0;
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: bold;
+		padding-bottom: 12px;
+	}
+	a{
+		color: #e0e0e0;
+	}
+	ul{
+		li{
+			font-size: 14px;
+			line-height: 16px;
+			padding-bottom: 14px;
+		}
+	}
+	p{
+		margin: 0;
+		font-size: 14px;
+		line-height:20px;
+		color: #e0e0e0;
+	}
+}
