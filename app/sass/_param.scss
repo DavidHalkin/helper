@@ -320,7 +320,7 @@ h1,.h1{
 	font-size: 24px;
 	line-height: 26px;
 }
-h3{
+h3,.h3{
 	font-size: 18px;
 	line-height: 20px;
 	color: #5f6b7b;
@@ -569,5 +569,32 @@ h3{
 		background: #38c173 !important;
 		border-color: #38c173 !important;
 		color: #fff !important;
+	}
+}
+.btn_sm{
+	font-size: 14px;
+	line-height: 16px;
+	border-radius: 5px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+.btn-light.disabled, .btn-light:disabled{
+	color: #cfd6de;
+	background-color: #f8f9fb;
+	border-color: #f8f9fb;
+}
+.field_with_icon{
+	display: block;
+	position: relative;
+	i{
+		position: absolute;
+		right:20px;
+		top: 50%;
+		transform:translateY(-50%);
+		color: #8895a6;
+		font-size: 10px;
+	}
+	.form-control{
+		padding-right: 40px;
 	}
 }
