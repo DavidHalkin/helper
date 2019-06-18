@@ -391,6 +391,18 @@ h3, .h3 { font-size: 18px; line-height: 20px; color: #5f6b7b; }
 
 .ic_inp i { font-size: 18px; line-height: 1; position: absolute; top: 50%; left: 20px; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); color: #bac1ce; margin-top: 3px; }
 
+.chat_modal.chat_alerts { max-width: 930px; }
+
+.chat_modal.chat_alerts .chat_main_holder { height: -webkit-calc(100vh - 150px); height: calc(100vh - 150px); }
+
+@media (max-width: 991.98px) { .chat_modal.chat_alerts .chat_main_holder { height: -webkit-calc(100vh - 90px); height: calc(100vh - 90px); } }
+
+@media (max-width: 575.98px) { .chat_modal.chat_alerts .chat_main_holder { height: -webkit-calc(100vh - 60px); height: calc(100vh - 60px); } }
+
+.chat_modal.chat_alerts .one_mssg { max-width: 600px; margin-left: auto; margin-right: auto; }
+
+@media (max-width: 767.98px) { .chat_modal.chat_alerts .col_chat_txt_header h2 { font-size: 20px; line-height: 22px; } }
+
 .chat_modal textarea.form-control { min-height: 60px; height: 60px; font-size: 14px; line-height: 17px; }
 
 .col_chat_name { max-width: 300px; -webkit-box-flex: 0; -webkit-flex: 0 0 300px; -ms-flex: 0 0 300px; flex: 0 0 300px; background: #fff; border-right: 1px solid #cfd6de; }
@@ -464,9 +476,7 @@ h3, .h3 { font-size: 18px; line-height: 20px; color: #5f6b7b; }
 
 @media (max-width: 575.98px) { .col_chat_txt_header { -webkit-box-flex: 0; -webkit-flex: 0 0 55px; -ms-flex: 0 0 55px; flex: 0 0 55px; max-height: 55px; } }
 
-.col_chat_txt_container { -webkit-box-flex: 1; -webkit-flex: 1 1 auto; -ms-flex: 1 1 auto; flex: 1 1 auto; -webkit-flex: 1 0 auto; -ms-flex: 1 0 auto; flex: 1 0 auto; background: #fff; max-height: -webkit-calc(100% - 93px - 82px); max-height: calc(100% - 93px - 82px); overflow: auto; }
-
-@media (max-width: 575.98px) { .col_chat_txt_container { max-height: -webkit-calc(100% - 93px - 110px); max-height: calc(100% - 93px - 110px); } }
+.col_chat_txt_container { background: #fff; overflow: auto; -webkit-box-flex: 1; -webkit-flex: 1 1 auto; -ms-flex: 1 1 auto; flex: 1 1 auto; padding-top: 10px; padding-bottom: 10px; }
 
 .one_mssg .one_mssg_img { max-width: 50px; -webkit-box-flex: 0; -webkit-flex: 0 0 50px; -ms-flex: 0 0 50px; flex: 0 0 50px; }
 
