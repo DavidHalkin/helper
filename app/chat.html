@@ -177,7 +177,7 @@
 								<a href="#" class="icn icn-user text-success d-block d-sm-none"></a>
 								<a href="#" class="btn btn-success px-3 px-lg-4 btn_sm d-none d-sm-block">Открыть профиль</a>
 								<span class="dell_history d-block ml-4">
-									<a href="#" class="d-flex align-items-center">
+									<a href="#" class="d-flex align-items-center" data-toggle="modal" data-target="#alert">
 										<i class="icn icn-trash mr-2"></i>
 										<em class="d-none d-lg-block">Удалить диалог</em>
 									</a>
@@ -300,6 +300,23 @@
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- modal alert -->
+		<div class="modal fade" id="alert" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<p class="modal-title" id="exampleModalLabel"><strong>Удалить всю переписку?</strong></p>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body text-center">
+						<button type="button" class="btn btn-secondary btn_sm" data-dismiss="modal">Нет</button>
+						<button type="button" class="btn btn-danger btn_sm">Удалить</button>
 					</div>
 				</div>
 			</div>

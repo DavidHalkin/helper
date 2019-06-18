@@ -391,7 +391,7 @@ h3, .h3 { font-size: 18px; line-height: 20px; color: #5f6b7b; }
 
 .ic_inp i { font-size: 18px; line-height: 1; position: absolute; top: 50%; left: 20px; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); color: #bac1ce; margin-top: 3px; }
 
-.chat_modal textarea.form-control { min-height: 60px; height: 60px; }
+.chat_modal textarea.form-control { min-height: 60px; height: 60px; font-size: 14px; line-height: 17px; }
 
 .col_chat_name { max-width: 300px; -webkit-box-flex: 0; -webkit-flex: 0 0 300px; -ms-flex: 0 0 300px; flex: 0 0 300px; background: #fff; border-right: 1px solid #cfd6de; }
 
