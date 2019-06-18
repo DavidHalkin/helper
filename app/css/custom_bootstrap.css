@@ -2250,7 +2250,7 @@ a.bg-dark_gray:hover, a.bg-dark_gray:focus, button.bg-dark_gray:hover, button.bg
 
 .rounded-circle { -webkit-border-radius: 50% !important; border-radius: 50% !important; }
 
-.rounded-pill { -webkit-border-radius: 50rem !important; border-radius: 50rem !important; }
+.rounded-pill { -webkit-border-radius: 9px !important; border-radius: 9px !important; }
 
 .rounded-0 { -webkit-border-radius: 0 !important; border-radius: 0 !important; }
 

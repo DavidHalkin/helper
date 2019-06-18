@@ -10,4 +10,8 @@ $(document).ready(function(){
         $(this).parents(".item_task").toggleClass("in_favorite");
         return false;
     });
+    $(".favorite_js a").click(function(){
+        $(this).parent().toggleClass("active");
+        return false;
+    });
 });

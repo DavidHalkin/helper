@@ -602,6 +602,14 @@ html, body { height: 100%; }
 
 .favorite_item a:hover i { color: #e46766; }
 
+.favorite_item.favorite_item_static { display: block; position: relative; }
+
+.favorite_item.favorite_item_static .icn-heart-full { display: none; }
+
+.favorite_item.favorite_item_static.active .icn-heart { display: none; }
+
+.favorite_item.favorite_item_static.active .icn-heart-full { display: block; }
+
 @media (max-width: 991.98px) { .favorite_item { display: block; } }
 
 .min_filter_category h3 { margin: 0; }
@@ -680,9 +688,29 @@ html, body { height: 100%; }
 
 .user_inf .star_list.star_small i { font-size: 15px !important; }
 
+.fz_18 { font-size: 18px !important; line-height: 20px !important; }
+
 .user_inf_photo img { -webkit-border-radius: 50%; border-radius: 50%; }
 
 .user_inf_photo.bordered img { border: 5px solid #cfd6de; }
+
+.user_inf_photo.on_line img { border-color: #38c173; }
+
+.user_inf_photo.small img { max-width: 90px; }
+
+.edit_link { position: absolute; display: block; height: -webkit-calc(100% - 10px); height: calc(100% - 10px); width: -webkit-calc(100% - 10px); width: calc(100% - 10px); top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); background: rgba(226, 230, 239, 0.85); -webkit-border-radius: 50%; border-radius: 50%; opacity: 0; -webkit-transition: opacity 0.3s ease; -o-transition: opacity 0.3s ease; transition: opacity 0.3s ease; }
+
+.edit_link i { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); font-size: 30px; color: #232935; }
+
+@media (max-width: 991.98px) { .edit_link { opacity: 1; position: static; display: block; -webkit-transform: none; -ms-transform: none; transform: none; -webkit-border-radius: 4px; border-radius: 4px; width: 100%; text-align: center; margin-top: 10px; }
+  .edit_link i { font-size: 10px; position: static; -webkit-transform: none; -ms-transform: none; transform: none; display: inline-block; }
+  .edit_link em { font-size: 12px; font-style: normal; color: #232935; } }
+
+.user_inf_photo a img { width: 100%; }
+
+.user_inf_photo a:hover { text-decoration: none; }
+
+.user_inf_photo a:hover .edit_link { opacity: 1; }
 
 .user_inf_top { border-bottom: 1px solid #cfd6de; }
 
@@ -747,5 +775,39 @@ html, body { height: 100%; }
 .border_tp { border-top: 1px solid #cfd6de; }
 
 .status_alert i { position: relative; top: 2px; font-size: 10px; }
+
+.task_title .task_title_txt { -webkit-box-flex: 1; -webkit-flex-grow: 1; -ms-flex-positive: 1; flex-grow: 1; max-width: 100%; -webkit-flex-basis: 0; -ms-flex-preferred-size: 0; flex-basis: 0; width: 100%; }
+
+@media (max-width: 991.98px) { .task_title .task_title_txt { -webkit-box-flex: 0; -webkit-flex: 0 0 100%; -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%; } }
+
+.task_title .task_title_inf { max-width: 220px; -webkit-box-flex: 0; -webkit-flex: 0 0 220px; -ms-flex: 0 0 220px; flex: 0 0 220px; }
+
+.task_title .task_title_inf strong { font-size: 30px; line-height: 32px; color: #000; font-weight: 500; }
+
+.task_title .task_title_inf em { font-style: normal; color: #8895a6; }
+
+@media (max-width: 991.98px) { .task_title .task_title_inf { -webkit-box-flex: 0; -webkit-flex: 0 0 100%; -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%; } }
+
+.geo_task i { color: #b6becb; font-size: 20px; line-height: 1; position: relative; top: 2px; }
+
+.geo_task span { font-size: 18px; line-height: 20px; color: #5f6b7b; }
+
+.geo_task span span, .geo_task span a { font-weight: 500; }
+
+.map_holder { height: 300px; }
+
+.spec_task { font-size: 14px; line-height: 17px; color: #8895a6; }
+
+.spec_task i { font-size: 20px; }
+
+.spec_task li { padding-bottom: 15px; }
+
+.spec_task strong { font-weight: 500; }
+
+.discription_title { font-size: 14px; line-height: 16px; color: #5f6b7b; font-weight: 500; }
+
+.discription_title i { line-height: 1; font-size: 20px; }
+
+.pdf_link i { font-size: 20px; line-height: 1; color: #c3cad4; position: relative; top: 2px; }
 
 /*# sourceMappingURL=all.css.map */
