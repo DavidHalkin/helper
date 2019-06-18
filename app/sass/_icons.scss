@@ -37,122 +37,125 @@
 	@if $filename == attach {
 		$char: "\E003";
 	}
-	@if $filename == bonus {
+	@if $filename == bars {
 		$char: "\E004";
 	}
-	@if $filename == book {
+	@if $filename == bonus {
 		$char: "\E005";
 	}
-	@if $filename == building {
+	@if $filename == book {
 		$char: "\E006";
 	}
-	@if $filename == camera {
+	@if $filename == building {
 		$char: "\E007";
 	}
-	@if $filename == cash {
+	@if $filename == camera {
 		$char: "\E008";
 	}
-	@if $filename == chat-online {
+	@if $filename == cash {
 		$char: "\E009";
 	}
-	@if $filename == chat {
+	@if $filename == chat-online {
 		$char: "\E00A";
 	}
-	@if $filename == chevron-down {
+	@if $filename == chat {
 		$char: "\E00B";
 	}
-	@if $filename == chevron-left {
+	@if $filename == chevron-down {
 		$char: "\E00C";
 	}
-	@if $filename == chevron-right {
+	@if $filename == chevron-left {
 		$char: "\E00D";
 	}
-	@if $filename == chevron-top {
+	@if $filename == chevron-right {
 		$char: "\E00E";
 	}
-	@if $filename == cog {
+	@if $filename == chevron-top {
 		$char: "\E00F";
 	}
-	@if $filename == doc {
+	@if $filename == cog {
 		$char: "\E010";
 	}
-	@if $filename == edit {
+	@if $filename == doc {
 		$char: "\E011";
 	}
-	@if $filename == fb {
+	@if $filename == edit {
 		$char: "\E012";
 	}
-	@if $filename == file {
+	@if $filename == fb {
 		$char: "\E013";
 	}
-	@if $filename == gearwheel {
+	@if $filename == file {
 		$char: "\E014";
 	}
-	@if $filename == google {
+	@if $filename == gearwheel {
 		$char: "\E015";
 	}
-	@if $filename == heart-full {
+	@if $filename == google {
 		$char: "\E016";
 	}
-	@if $filename == heart {
+	@if $filename == heart-full {
 		$char: "\E017";
 	}
-	@if $filename == house {
+	@if $filename == heart {
 		$char: "\E018";
 	}
-	@if $filename == loopa {
+	@if $filename == house {
 		$char: "\E019";
 	}
-	@if $filename == mirror {
+	@if $filename == loopa {
 		$char: "\E01A";
 	}
-	@if $filename == money {
+	@if $filename == mirror {
 		$char: "\E01B";
 	}
-	@if $filename == nonimage {
+	@if $filename == money {
 		$char: "\E01C";
 	}
-	@if $filename == notifications {
+	@if $filename == nonimage {
 		$char: "\E01D";
 	}
-	@if $filename == odnoklassniki {
+	@if $filename == notifications {
 		$char: "\E01E";
 	}
-	@if $filename == ok {
+	@if $filename == odnoklassniki {
 		$char: "\E01F";
 	}
-	@if $filename == other {
+	@if $filename == ok {
 		$char: "\E020";
 	}
-	@if $filename == party {
+	@if $filename == other {
 		$char: "\E021";
 	}
-	@if $filename == reviews {
+	@if $filename == party {
 		$char: "\E022";
 	}
-	@if $filename == sign {
+	@if $filename == reviews {
 		$char: "\E023";
 	}
-	@if $filename == star {
+	@if $filename == sign {
 		$char: "\E024";
 	}
-	@if $filename == tasks {
+	@if $filename == star {
 		$char: "\E025";
 	}
-	@if $filename == time {
+	@if $filename == tasks {
 		$char: "\E026";
 	}
-	@if $filename == tool {
+	@if $filename == time {
 		$char: "\E027";
 	}
-	@if $filename == trash {
+	@if $filename == tool {
 		$char: "\E028";
 	}
-	@if $filename == user {
+	@if $filename == trash {
 		$char: "\E029";
 	}
-	@if $filename == vk {
+	@if $filename == user {
 		$char: "\E02A";
+	}
+	@if $filename == vk {
+		$char: "\E02B";
 	}
 
 	@return $char;
@@ -177,6 +180,9 @@
 }
 .icn-attach {
 	@include icn(attach);
+}
+.icn-bars {
+	@include icn(bars);
 }
 .icn-bonus {
 	@include icn(bonus);

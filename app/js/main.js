@@ -14,4 +14,14 @@ $(document).ready(function(){
         $(this).parent().toggleClass("active");
         return false;
     });
+    // 
+      // toggle chat
+      $(".chat_toogle_js").click(function(){
+        $(this).toggleClass("active");
+        $(".chat_main_holder").toggleClass("active");
+    });
+      // switch_panel_chat
+       $(".switch_panel_chat_js").click(function(){
+        $(".chat_main_holder").toggleClass("active");
+    });
 });
