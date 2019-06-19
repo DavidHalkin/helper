@@ -170,6 +170,30 @@ h3, .h3 { font-size: 18px; line-height: 20px; color: #5f6b7b; }
 
 .checkbox_custom label:hover:before { border-color: #38c173 !important; }
 
+.custom_radio { /* checkbox aspect */ /* checked mark aspect */ /* checked mark aspect changes */ /* disabled radio */ }
+
+.custom_radio [type="radio"]:not(:checked), .custom_radio [type="radio"]:checked { position: absolute; left: -9999px; }
+
+.custom_radio [type="radio"]:not(:checked) + label, .custom_radio [type="radio"]:checked + label { position: relative; padding-left: 30px; cursor: pointer; padding-top: 3px; padding-bottom: 3px; margin-bottom: 0; font-size: 14px; line-height: 16px; color: #5f6b7b; }
+
+.custom_radio [type="radio"]:checked + label { color: #38c173; }
+
+.custom_radio [type="radio"]:not(:checked) + label:before, .custom_radio [type="radio"]:checked + label:before { content: ''; position: absolute; left: 0; top: 1px; width: 20px; height: 20px; border: 2px solid #d0d7df; background: #fff; -webkit-border-radius: 50%; border-radius: 50%; }
+
+.custom_radio [type="radio"]:checked + label:before { border-color: #38c173; border-width: 6px; }
+
+.custom_radio [type="radio"]:not(:checked) + label:after { opacity: 0; -webkit-transform: skewX(-10deg) rotate(-50deg) scale(0); -ms-transform: skewX(-10deg) rotate(-50deg) scale(0); transform: skewX(-10deg) rotate(-50deg) scale(0); }
+
+.custom_radio [type="radio"]:disabled:not(:checked) + label:before, .custom_radio [type="radio"]:disabled:checked + label:before { -webkit-box-shadow: none; box-shadow: none; border-color: #bbb; background-color: rgba(221, 221, 221, 0.4); }
+
+.custom_radio [type="radio"]:disabled:checked + label:after { color: #999; }
+
+.custom_radio [type="radio"]:disabled + label { color: #aaa; }
+
+.custom_radio label:hover { color: #38c173 !important; }
+
+.custom_radio label:hover:before { border-color: #38c173 !important; }
+
 .btn-outline-success { border-width: 2px; color: #5f6c7c; }
 
 .pager_list { padding: 0 10px; }
@@ -209,6 +233,10 @@ h3, .h3 { font-size: 18px; line-height: 20px; color: #5f6b7b; }
 .field_with_icon i { position: absolute; right: 20px; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); color: #8895a6; font-size: 10px; }
 
 .field_with_icon .form-control { padding-right: 40px; }
+
+@media (max-width: 767.98px) { .btn_xs_block { display: block !important; width: 100%; } }
+
+.color_gray { color: #8895a6; }
 
 @font-face { font-family: "Icons"; src: url("../fonts/icons_custom/Icons.eot"); src: url("../fonts/icons_custom/Icons.eot?#iefix") format("eot"), url("../fonts/icons_custom/Icons.woff2") format("woff2"), url("../fonts/icons_custom/Icons.woff") format("woff"), url("../fonts/icons_custom/Icons.ttf") format("truetype"), url("../fonts/icons_custom/Icons.svg#Icons") format("svg"); }
 
@@ -817,7 +845,7 @@ html, body { height: 100%; }
 
 .or_tag:after { content: ''; height: 1px; width: 100%; position: absolute; left: 0; top: 50%; background: #cfd6de; }
 
-.fz_12 { font-size: 12px; }
+.fz_12 { font-size: 12px; line-height: 15px; }
 
 .user_inf { background: #f8f9fb; -webkit-border-radius: 5px; border-radius: 5px; }
 
@@ -829,7 +857,7 @@ html, body { height: 100%; }
 
 .fz_18 { font-size: 18px !important; line-height: 20px !important; }
 
-.user_inf_photo img { -webkit-border-radius: 50%; border-radius: 50%; }
+.user_inf_photo img { -webkit-border-radius: 50%; border-radius: 50%; max-width: 140px; }
 
 .user_inf_photo.bordered img { border: 5px solid #cfd6de; }
 
@@ -948,5 +976,63 @@ html, body { height: 100%; }
 .discription_title i { line-height: 1; font-size: 20px; }
 
 .pdf_link i { font-size: 20px; line-height: 1; color: #c3cad4; position: relative; top: 2px; }
+
+.one_step:first-of-type .title_step { border-top: 0; }
+
+.one_step .title_step { border-top: 1px solid #cfd6de; }
+
+.one_step.step_done h2 i { display: inline-block; }
+
+.one_step.step_active h2 { font-size: 24px; line-height: 26px; color: #222834; font-weight: 500; position: relative; }
+
+.one_step.step_active h2:after { content: ''; bottom: 0; left: 0; position: absolute; height: 2px; width: 40px; background: #38c173; }
+
+.title_step { padding-top: 25px; padding-bottom: 10px; }
+
+.title_step h2 { padding-bottom: 16px; margin: 0; font-size: 24px; line-height: 26px; color: #cfd6de; }
+
+.title_step h2 i { font-size: 13px; display: none; }
+
+.list_cat .custom_radio { margin-bottom: 16px; }
+
+.list_cat_two_column { -webkit-column-count: 2; -moz-column-count: 2; column-count: 2; }
+
+@media (max-width: 575.98px) { .list_cat_two_column.xs_one_column { -webkit-column-count: 1; -moz-column-count: 1; column-count: 1; } }
+
+.label_custom { font-size: 14px; line-height: 17px; color: #5f6b7b; }
+
+.disabled_form_group label { color: #b8c5ce; }
+
+.form-control:disabled { background: #e2e6ef; border-color: #e2e6ef; opacity: 1; color: #b8c5ce; }
+
+.step_time li { padding-left: 15px; position: relative; font-size: 14px; line-height: 16px; color: #b8c5ce; padding-bottom: 13px; }
+
+.step_time li:last-child { padding-bottom: 0; }
+
+.step_time li:before { position: absolute; top: 0; left: 0; }
+
+.datepicker_custom .datepicker { width: 100%; }
+
+.datepicker_custom .datepicker--cell.-selected-, .datepicker_custom .datepicker--cell.-selected-.-current- { background: #2d995b; }
+
+.datepicker_custom .datepicker--cell.-in-range- { background: rgba(45, 153, 91, 0.3); }
+
+.cost_block { background: #f8f9fb; -webkit-border-radius: 8px; border-radius: 8px; }
+
+.w_100 { width: 100px; }
+
+@media (min-width: 768px) { .w_md_50 { width: 50% !important; } }
+
+@media (min-width: 992px) { .aside_fix { max-width: 300px; -webkit-box-flex: 0; -webkit-flex: 0 0 300px; -ms-flex: 0 0 300px; flex: 0 0 300px; } }
+
+.small_review p { margin: 0; font-size: 14px; line-height: 17px; color: #8895a7; }
+
+.small_review strong { font-size: 16px; line-height: 18px; }
+
+.small_review_list .small_review { border-top: 1px solid #e6e6e6; }
+
+.small_review_list .small_review:first-of-type { border-top: 0; }
+
+.show_more_reviews a { color: #8895a6; }
 
 /*# sourceMappingURL=all.css.map */

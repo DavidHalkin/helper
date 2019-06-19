@@ -101,6 +101,7 @@ gulp.task('scripts', function() {
 		'bower_components/fancybox/dist/jquery.fancybox.min.js',
 		'bower_components/jcf/dist/js/jcf.js',
 		'bower_components/jcf/dist/js/jcf.select.js',
+		'bower_components/air-datepicker/dist/js/datepicker.min.js',
 		])
 		// .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 		// .pipe(uglify()) // Сжимаем JS файл
@@ -113,7 +114,7 @@ gulp.task('css-libs', ['sass'], function() {
 	return gulp.src([ // Берем все необходимые библиотеки
 		'bower_components/fancybox/dist/jquery.fancybox.min.css',
 		'bower_components/jcf/dist/css/theme-minimal/jcf.css',
-		// 'bower_components/owl.carousel/dist/assets/owl.theme.default.css',
+		'bower_components/air-datepicker/dist/css/datepicker.min.css',
 		
 		])
 		.pipe(sourcemaps.init())
