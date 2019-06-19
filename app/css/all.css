@@ -993,7 +993,7 @@ html, body { height: 100%; }
 
 .title_step h2 i { font-size: 13px; display: none; }
 
-.list_cat .custom_radio { margin-bottom: 16px; }
+.list_cat .custom_radio { padding-bottom: 16px; }
 
 .list_cat_two_column { -webkit-column-count: 2; -moz-column-count: 2; column-count: 2; }
 
