@@ -13,7 +13,8 @@
     "bootstrap": "^4.2.1",
     "fancybox": "^3.5.7",
     "jcf": "^1.2.3",
-    "air-datepicker": "^2.2.3"
+    "air-datepicker": "^2.2.3",
+    "datatables.net-dt": "^3.2.2"
   },
   "devDependencies": {}
 }

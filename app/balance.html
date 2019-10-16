@@ -105,84 +105,68 @@
 							<div class="col-xl-8">
 								<h1 class="styled_title darken_color mb-3"><span>Баланс счета</span></h1>
 								<p>Вы можете вывести средства с основного баланса (без учета бонусов и средств, зарезервированных для возможной оплаты комиссии по вашим активным предложениям) на привязанную к профилю банковскую карту. При выводе средств с основного баланса могут быть списаны бонусы.</p>
-								<div class="table-responsive x_scroll_table"  style="height: 300px;">
-									<table class="table mb-0">
-										<thead>
-											<tr>
-												<th class="bg-success text-white">ID</th>
-												<th class="bg-success text-white">Дата поступления</th>
-												<th class="bg-success text-white">Дата выплаты</th>
-												<th class="bg-success text-white">Сумма</th>
-												<th class="bg-success text-white">Кошелек</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td class="text-danger">FIRST</td>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-												<td>@mdo</td>
-											</tr>
-											<tr class="table-success">
-												<td>1</td>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-												<td>@mdo</td>
-											</tr>
-											<tr>
-												<td>1</td>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-												<td>@mdo</td>
-											</tr>
-											<tr>
-												<td>1</td>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-												<td>@mdo</td>
-											</tr>
-											<tr>
-												<td>1</td>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-												<td>@mdo</td>
-											</tr>
-											<tr>
-												<td>1</td>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-												<td>@mdo</td>
-											</tr>
-											<tr>
-												<td>1</td>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-												<td>@mdo</td>
-											</tr>
-											<tr>
-												<td>1</td>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-												<td>@mdo</td>
-											</tr>
-											<tr>
-												<td class="text-danger">LAST</td>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-												<td>@mdo</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
+								<table class="display table mb-0 tabl_custom__js" id="example" style="width: 100%;">
+									<thead>
+										<tr>
+											<th class="bg-success text-white">ID</th>
+											<th class="bg-success text-white text-nowrap">Дата поступления</th>
+											<th class="bg-success text-white text-nowrap">Дата выплаты</th>
+											<th class="bg-success text-white text-nowrap">Сумма</th>
+											<th class="bg-success text-white text-nowrap"  data-orderable="false">Кошелек</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="text-danger">0</td>
+											<td>20.20.2022</td>
+											<td>20.20.2022</td>
+											<td>1 $</td>
+											<td>122222</td>
+										</tr>
+										<tr class="table-success">
+											<td class="text-success">10</td>
+											<td>20.20.2021</td>
+											<td>20.20.2022</td>
+											<td>1111 $</td>
+											<td>122222</td>
+										</tr>
+										<tr>
+											<td class="text-success">20</td>
+											<td>20.20.2021</td>
+											<td>20.20.2022</td>
+											<td>10 $</td>
+											<td>122222</td>
+										</tr>
+										<tr>
+											<td class="text-success">330</td>
+											<td>20.20.1511</td>
+											<td>20.20.1515</td>
+											<td>0.6 $</td>
+											<td>122222</td>
+										</tr>
+										<tr>
+											<td class="text-success">330</td>
+											<td>20.20.1511</td>
+											<td>20.20.1515</td>
+											<td>0.6 $</td>
+											<td>122222</td>
+										</tr>
+										<tr>
+											<td class="text-success">330</td>
+											<td>20.20.1511</td>
+											<td>20.20.1515</td>
+											<td>0.6 $</td>
+											<td>122222</td>
+										</tr>
+										<tr>
+											<td class="text-success">330</td>
+											<td>20.20.1511</td>
+											<td>20.20.1515</td>
+											<td>0.6 $</td>
+											<td>122222</td>
+										</tr>
+									</tbody>
+								</table>
 								<div class="row align-items-center pt-3 mb-4">
 									<div class="col-12  col-md-7">
 										<div class="box_info gray_light p-3 p-lg-5">
@@ -319,5 +303,19 @@
 		<script src="js/jcf.js"></script>
 		<script src="js/jcf.select.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/jquery.dataTables.min.js"></script>
+		<script>
+			$(document).ready(function() {
+			 var table = $('.tabl_custom__js').DataTable({
+				  	searching: false,
+			    	bLengthChange: false,
+			    	bInfo: false,
+			    	"scrollY": 200,
+					"scrollX": true,
+					"aaSorting": [],
+					"paging": false
+				});
+		});
+		</script>
 	</body>
 </html>
