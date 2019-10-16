@@ -1035,4 +1035,6 @@ html, body { height: 100%; }
 
 .show_more_reviews a { color: #8895a6; }
 
+.x_scroll_table { overflow-y: auto; }
+
 /*# sourceMappingURL=all.css.map */
