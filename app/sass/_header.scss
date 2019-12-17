@@ -96,6 +96,7 @@
 				width:270px;
 			}
 			&.dropdown_user{
+				max-width: 170px;
 				.dropdown-menu{
 					overflow: auto;
 					max-height: 200px;
@@ -146,6 +147,11 @@
 			
 		}
 		.user_img{
+			@include media-breakpoint-up(sm) {
+				height: 40px;
+				max-width: 40px;
+				flex:0 0 40px;
+			}
 			img{
 				max-width: 40px;
 				border-radius: 50%;
@@ -153,6 +159,11 @@
 					max-width: 30px;
 				}
 			}
+		}
+		.user_name{
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
 		}
 	}
 }

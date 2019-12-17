@@ -375,6 +375,8 @@ h3, .h3 { font-size: 18px; line-height: 20px; color: #5f6b7b; }
 
 .header .main_nav .dropdown .dropdown-menu { width: 270px; }
 
+.header .main_nav .dropdown.dropdown_user { max-width: 170px; }
+
 .header .main_nav .dropdown.dropdown_user .dropdown-menu { overflow: auto; max-height: 200px; }
 
 .header .main_nav .dropdown em { font-style: normal; position: relative; margin-right: 5px; }
@@ -393,9 +395,13 @@ h3, .h3 { font-size: 18px; line-height: 20px; color: #5f6b7b; }
 
 .header .main_nav .dropdown > a { color: #5f6b7b; }
 
+@media (min-width: 576px) { .header .main_nav .user_img { height: 40px; max-width: 40px; -webkit-box-flex: 0; -webkit-flex: 0 0 40px; -ms-flex: 0 0 40px; flex: 0 0 40px; } }
+
 .header .main_nav .user_img img { max-width: 40px; -webkit-border-radius: 50%; border-radius: 50%; }
 
 @media (max-width: 575.98px) { .header .main_nav .user_img img { max-width: 30px; } }
+
+.header .main_nav .user_name { -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
 
 .list_enter { height: 56px; }
 
