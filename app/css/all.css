@@ -238,9 +238,11 @@ h3, .h3 { font-size: 18px; line-height: 20px; color: #5f6b7b; }
 
 .color_gray { color: #8895a6; }
 
+.fz_30 { font-size: 30px; }
+
 @font-face { font-family: "Icons"; src: url("../fonts/icons_custom/Icons.eot"); src: url("../fonts/icons_custom/Icons.eot?#iefix") format("eot"), url("../fonts/icons_custom/Icons.woff2") format("woff2"), url("../fonts/icons_custom/Icons.woff") format("woff"), url("../fonts/icons_custom/Icons.ttf") format("truetype"), url("../fonts/icons_custom/Icons.svg#Icons") format("svg"); }
 
-.icn-adres:before, .icn-arrow:before, .icn-attach:before, .icn-bars:before, .icn-bonus:before, .icn-book:before, .icn-building:before, .icn-camera:before, .icn-cash:before, .icn-chat-online:before, .icn-chat:before, .icn-chevron-down:before, .icn-chevron-left:before, .icn-chevron-right:before, .icn-chevron-top:before, .icn-cog:before, .icn-doc:before, .icn-edit:before, .icn-fb:before, .icn-file:before, .icn-gearwheel:before, .icn-google:before, .icn-heart-full:before, .icn-heart:before, .icn-house:before, .icn-loopa:before, .icn-mirror:before, .icn-money:before, .icn-nonimage:before, .icn-notifications:before, .icn-odnoklassniki:before, .icn-ok:before, .icn-other:before, .icn-party:before, .icn-reviews:before, .icn-sign:before, .icn-star:before, .icn-tasks:before, .icn-time:before, .icn-tool:before, .icn-trash:before, .icn-user:before, .icn-vk:before { font-family: "Icons"; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-style: normal; font-variant: normal; font-weight: normal; text-decoration: none; text-transform: none; line-height: 1; }
+.icn-adres:before, .icn-arrow:before, .icn-attach:before, .icn-bars:before, .icn-bonus:before, .icn-book:before, .icn-building:before, .icn-camera:before, .icn-cash:before, .icn-chat-online:before, .icn-chat:before, .icn-chevron-down:before, .icn-chevron-left:before, .icn-chevron-right:before, .icn-chevron-top:before, .icn-cog:before, .icn-doc:before, .icn-edit:before, .icn-fb:before, .icn-file:before, .icn-gearwheel:before, .icn-google:before, .icn-heart-full:before, .icn-heart:before, .icn-house:before, .icn-loopa:before, .icn-mirror:before, .icn-money:before, .icn-nonimage:before, .icn-notifications:before, .icn-odnoklassniki:before, .icn-ok:before, .icn-other:before, .icn-party:before, .icn-reviews:before, .icn-sign:before, .icn-star:before, .icn-tasks:before, .icn-time:before, .icn-tool:before, .icn-trash:before, .icn-user:before, .icn-vk:before, .br-theme-bootstrap-stars .br-widget a:before { font-family: "Icons"; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-style: normal; font-variant: normal; font-weight: normal; text-decoration: none; text-transform: none; line-height: 1; }
 
 .icn-adres:before { content: ""; }
 
@@ -682,6 +684,8 @@ html, body { height: 100%; }
 
 @media (min-width: 992px) { .col_aside { max-width: 260px; -webkit-box-flex: 0; -webkit-flex: 0 0 260px; -ms-flex: 0 0 260px; flex: 0 0 260px; } }
 
+select { width: 100%; }
+
 .list_filter { font-size: 14px; line-height: 16px; }
 
 .list_filter li { padding-bottom: 20px; }
@@ -706,9 +710,11 @@ html, body { height: 100%; }
 
 .star_small i { font-size: 15px !important; }
 
-.task_text_data { font-size: 14px; line-height: 18px; color: #8895a6; padding-top: 13px !important; }
+.name_who { max-width: 150px; }
 
-.task_text_data li { white-space: nowrap; }
+.task_text_data { font-size: 14px; line-height: 18px; color: #8895a6; padding-top: 13px !important; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+
+.task_text_data li { white-space: nowrap; margin-top: 3px; margin-bottom: 3px; }
 
 .task_text_data a { color: #8895a6; }
 
@@ -718,7 +724,17 @@ html, body { height: 100%; }
 
 @media (max-width: 575.98px) { .xs_w100p { max-width: 100%; -webkit-box-flex: 0; -webkit-flex: 0 0 100%; -ms-flex: 0 0 100%; flex: 0 0 100%; } }
 
-.item_task { border-bottom: 1px solid #f2f3f5; padding-top: 30px; padding-bottom: 30px; position: relative; }
+.badge_pro { padding: 0 16px; -webkit-border-radius: 8px; border-radius: 8px; background: #f4ca64; color: #5c4815 !important; font-size: 12px; line-height: 25px; display: inline-block; font-weight: 500; }
+
+.item_task_one { padding: 15px; border-bottom: 1px solid #f2f3f5; }
+
+.item_task_one.pro_active .item_task { background: #fffcf5; }
+
+.item_task_one:first-of-type { padding-top: 0; }
+
+.item_task_one:last-of-type { border-bottom: 0; }
+
+.item_task { padding-bottom: 15px; padding-top: 15px; position: relative; -webkit-border-radius: 9px; border-radius: 9px; }
 
 .item_task:hover .favorite_item { display: block; }
 
@@ -729,10 +745,6 @@ html, body { height: 100%; }
 .item_task.in_favorite .icn-heart { opacity: 0; }
 
 .item_task.in_favorite .icn-heart-full { opacity: 1; color: #e46766; }
-
-.item_task:first-of-type { padding-top: 0; }
-
-.item_task:last-of-type { border-bottom: 0; }
 
 .item_task .task_prev { max-width: 200px; -webkit-box-flex: 0; -webkit-flex: 0 0 200px; -ms-flex: 0 0 200px; flex: 0 0 200px; }
 
@@ -1042,5 +1054,33 @@ html, body { height: 100%; }
 .show_more_reviews a { color: #8895a6; }
 
 .x_scroll_table { overflow-y: auto; }
+
+.article_box h3 { font-size: 14px; line-height: 16px; color: #5f6b7b; text-decoration: underline; }
+
+.article_box a { color: #8895a6; font-size: 14px; line-height: 16px; display: inline-block; }
+
+.article_box a:hover { text-decoration: none; color: #38c173; }
+
+.list_star [class*="col-"] { cursor: pointer; }
+
+.list_star .active i { color: #f4ca64; }
+
+.list_star i { color: #cfd6de; }
+
+.list_star span { font-size: 12px; color: #303030; }
+
+.br-theme-bootstrap-stars .br-widget a { color: #cfd6de; font-size: 30px; margin-right: 15px; }
+
+.br-theme-bootstrap-stars .br-widget a:before { content: ""; }
+
+.br-theme-bootstrap-stars .br-widget a:last-of-type { margin-right: 0; }
+
+.br-theme-bootstrap-stars .br-widget a.br-active, .br-theme-bootstrap-stars .br-widget a.br-selected { color: #f4ca64; }
+
+.br-theme-bootstrap-stars .br-widget a:after { content: none; }
+
+.br-theme-bootstrap-stars .br-widget .br-current-rating { display: block; }
+
+.br-theme-bootstrap-stars .br-widget { height: auto; width: 224px; }
 
 /*# sourceMappingURL=all.css.map */
