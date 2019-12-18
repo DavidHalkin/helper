@@ -214,7 +214,7 @@ h3, .h3 { font-size: 18px; line-height: 20px; color: #5f6b7b; }
 
 .star_list { font-size: 0 !important; line-height: 0; }
 
-.star_list i { color: #cfd6de !important; padding: 0 2px !important; margin: 0 !important; font-size: 15px !important; cursor: pointer; line-height: 1 !important; }
+.star_list i { color: #cfd6de !important; padding: 0 2px !important; margin: 0 !important; font-size: 15px !important; line-height: 1 !important; }
 
 .star_list i:first-child { padding-left: 0 !important; }
 

@@ -104,6 +104,7 @@ gulp.task('scripts', function() {
 		'bower_components/air-datepicker/dist/js/datepicker.min.js',
 		'bower_components/datatables.net/js/jquery.dataTables.min.js',
 		'bower_components/jquery-bar-rating/dist/jquery.barrating.min.js',
+		'bower_components/inputmask/dist/jquery.inputmask.min.js',
 		])
 		// .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 		// .pipe(uglify()) // Сжимаем JS файл
