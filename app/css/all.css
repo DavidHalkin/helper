@@ -917,6 +917,8 @@ select { width: 100%; }
 
 .user_review { border-bottom: 1px solid #e6e6e6; }
 
+@media (max-width: 767.98px) { .user_review .add_review_btn { display: block; width: 100%; max-width: 100%; } }
+
 .user_review strong { font-size: 48px; line-height: 50px; color: #222834; font-weight: 500; }
 
 .user_review span { color: #5f6b7b; }
@@ -1082,5 +1084,38 @@ select { width: 100%; }
 .br-theme-bootstrap-stars .br-widget .br-current-rating { display: block; }
 
 .br-theme-bootstrap-stars .br-widget { height: auto; width: 224px; }
+
+.responsive_tabs .r-tabs-panel { display: none; }
+
+.responsive_tabs .r-tabs-panel.r-tabs-state-active { display: block; }
+
+.responsive_tabs .r-tabs-accordion-title { display: none; }
+
+.responsive_tabs .responsive_nav li a { background: #fff; }
+
+.responsive_tabs .responsive_nav li a span { color: #cfd6de; font-weight: bold; }
+
+.responsive_tabs .responsive_nav li.r-tabs-state-active a { background: #38c173; color: #fff; }
+
+.responsive_tabs .responsive_nav li.r-tabs-state-active a span { color: #fff; }
+
+.responsive_tabs .r-tabs-accordion-title.r-tabs-state-active a { background: #38c173; color: #fff; }
+
+.responsive_tabs .r-tabs-accordion-title.r-tabs-state-active a span { color: #fff; }
+
+.responsive_tabs .r-tabs-accordion-title a { display: block !important; font-size: 18px; padding: 10px 15px; }
+
+.responsive_tabs .r-tabs-accordion-title a:hover, .responsive_tabs .r-tabs-accordion-title a:active { text-decoration: none; }
+
+@media (max-width: 767.98px) { .responsive_tabs { border: 1px solid #cfd6de; -webkit-border-radius: 5px; border-radius: 5px; }
+  .responsive_tabs .r-tabs-nav { display: none; }
+  .responsive_tabs .r-tabs-accordion-title { display: block; border-top: 1px solid #cfd6de; }
+  .responsive_tabs .r-tabs-accordion-title a { margin: 0 -1px; }
+  .responsive_tabs .r-tabs-accordion-title a span { color: #cfd6de; font-weight: bold; }
+  .responsive_tabs .r-tabs-accordion-title:first-of-type { border-top: 0; }
+  .responsive_tabs .r-tabs-accordion-title:first-of-type a { -webkit-border-radius: 5px 5px 0 0; border-radius: 5px 5px 0 0; margin: -1px -1px 0; }
+  .responsive_tabs .r-tabs-panel { border: 0 !important; } }
+
+.add_form { display: none; }
 
 /*# sourceMappingURL=all.css.map */

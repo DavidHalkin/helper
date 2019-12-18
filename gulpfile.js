@@ -105,6 +105,7 @@ gulp.task('scripts', function() {
 		'bower_components/datatables.net/js/jquery.dataTables.min.js',
 		'bower_components/jquery-bar-rating/dist/jquery.barrating.min.js',
 		'bower_components/inputmask/dist/jquery.inputmask.min.js',
+		'bower_components/responsive-tabs/js/jquery.responsiveTabs.min.js',
 		])
 		// .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 		// .pipe(uglify()) // Сжимаем JS файл
@@ -120,6 +121,7 @@ gulp.task('css-libs', ['sass'], function() {
 		'bower_components/air-datepicker/dist/css/datepicker.min.css',
 		'bower_components/datatables.net-dt/css/jquery.dataTables.min.css',
 		'bower_components/jquery-bar-rating/dist/themes/bootstrap-stars.css',
+		// 'bower_components/responsive-tabs/css/responsive-tabs.css',
 		
 		])
 		.pipe(sourcemaps.init())

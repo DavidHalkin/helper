@@ -16,7 +16,8 @@
     "air-datepicker": "^2.2.3",
     "datatables.net-dt": "^3.2.2",
     "jquery-bar-rating": "^1.2.2",
-    "inputmask": "^5.0.1"
+    "inputmask": "^5.0.1",
+    "responsive-tabs": "^1.6.3"
   },
   "devDependencies": {}
 }

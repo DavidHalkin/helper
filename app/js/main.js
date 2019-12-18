@@ -41,12 +41,22 @@ $(document).ready(function(){
 		});
 
 	// stars js
-	// $('#star_rating').barrating({
-	// 	theme: 'bootstrap-stars',
-	// 	// showValues: true
-	// });
 	$('#star_rating').barrating('show', {
         theme: 'bootstrap-stars',
     });
-    $('#star_rating').barrating('set', '4');
+    $('#star_rating').barrating('set', '3');
+    // add form comment
+    $(".add_review_js").click(function(){
+		$(this).toggleClass("active").parents(".tabe_panel_js").toggleClass("add_comment_active").find(".add_form").slideToggle("fast");
+		$(this).parents(".tabe_panel_js").toggleClass("add_comment_active").find(".hidden_at_active").slideToggle("fast");
+		var $link_bnt = $(".add_review_js");
+			if ($link_bnt.hasClass("active")) {
+		        $link_bnt.html(" Убрать форму");
+		    } else {
+		        $link_bnt.html(" Оставить отзыв");
+		    }
+		return false;
+	});
+	
+
 });
