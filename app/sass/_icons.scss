@@ -142,20 +142,26 @@
 	@if $filename == tasks {
 		$char: "\E026";
 	}
-	@if $filename == time {
+	@if $filename == thumbs-down {
 		$char: "\E027";
 	}
-	@if $filename == tool {
+	@if $filename == thumbs-up {
 		$char: "\E028";
 	}
-	@if $filename == trash {
+	@if $filename == time {
 		$char: "\E029";
 	}
-	@if $filename == user {
+	@if $filename == tool {
 		$char: "\E02A";
 	}
-	@if $filename == vk {
+	@if $filename == trash {
 		$char: "\E02B";
+	}
+	@if $filename == user {
+		$char: "\E02C";
+	}
+	@if $filename == vk {
+		$char: "\E02D";
 	}
 
 	@return $char;
@@ -285,6 +291,12 @@
 }
 .icn-tasks {
 	@include icn(tasks);
+}
+.icn-thumbs-down {
+	@include icn(thumbs-down);
+}
+.icn-thumbs-up {
+	@include icn(thumbs-up);
 }
 .icn-time {
 	@include icn(time);
