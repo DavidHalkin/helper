@@ -17,7 +17,7 @@
 							<a class="navbar-brand" href="#"><img src="images/logo.svg" alt="" class="img-fluid"></a>
 							<a href="#" class="btn btn-light px-2 px-lg-3 px-xl-5 btn_small d-none d-sm-block">Создать задание</a>
 							<ul class="list-unstyled m-0 list_enter d-flex ml-auto align-items-center">
-								<li><a href="#">Войти</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#logIn">Войти</a></li>
 								<li><a href="#">Регистрация</a></li>
 							</ul>
 						</nav>
@@ -307,6 +307,43 @@
 				</div>
 				<div class="copy text-center">
 					<span>2019 Все права защищены</span>
+				</div>
+			</div>
+		</div>
+		<!-- modal logIn -->
+		<div class="modal fade" id="logIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header border-bottom-0">
+						<h1 class="styled_title styled_title_gray darken_color mb-0" id="exampleModalLabel"><span>Авторизация</span></h1>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="text-center">
+							плагин кнопок социалок в этом диве
+						</div>
+						<div class="or_tag text-center my-3"><span class="text-success">или</span></div>
+						<div class="form-group">
+							<label for="q12" class="pl-2 mb-1">E-mail  </label>
+							<input type="text" name="email" class="form-control" id="q12" placeholder="">
+							<span class=" form_error text-danger  " style="display: none">Заполните поле</span>
+						</div>
+						<div class="form-group">
+							<label for="q11" class="pl-2 mb-1">Пароль</label>
+							<input type="password" name="password" class="form-control" id="q11" placeholder="">
+							<span class=" form_error text-danger  " style="display: none">Заполните поле</span>
+						</div>
+						<div class="row justify-content-center pt-2">
+							<div class="col-md-6">
+								<button type="submit" class="btn btn-success btn-block">Войти</button>
+							</div>
+						</div>
+						<div class="text-center pt-3">
+							<p class="fz_12"> <a href="/recovery" class="text_underline">Забыл пароль</a></p>  
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

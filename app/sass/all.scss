@@ -236,7 +236,7 @@ body {
 			transform:translate(-50%,-50%);
 		}
 		img{
-			max-width: 30px;
+			max-width: 30px; 
 		}
 	}
 	h3{
@@ -1458,7 +1458,7 @@ select{
 		border-bottom: 0;
 		margin-top: 15px;
 		padding-bottom: 0;
-		padding-left: 30px;
+		padding-left: 24px;
 		border-top: 1px solid theme-color("light");
 	}
 	p{
@@ -1489,5 +1489,31 @@ select{
 	.alert{
 		font-size: 12px;
 		line-height: 20px;
+	}
+}
+.comment_form{
+	position: relative;
+	display: none;
+	&:before{
+		content: "";
+		width: 0;
+		height: 0;
+		border-bottom: 10px solid #dee2e6 ;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		position: absolute;
+		top: -10px;
+		left: 10px;
+	}
+	&:after{
+		content: "";
+		width: 0;
+		height: 0;
+		border-bottom: 9px solid #fff;
+		border-left: 8px solid transparent;
+		border-right: 8px solid transparent;
+		position: absolute;
+		top: -9px;
+		left: 12px;
 	}
 }

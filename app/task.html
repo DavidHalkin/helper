@@ -121,13 +121,15 @@
 											<span class="px-1 d-inline-block">Положительных: <span class="text-success"> 80%</span></span>
 										</div>
 									</div>
-									<ul class="list-unstyled m-0 total_user_inf py-3">
+									<ul class="list-unstyled m-0 total_user_inf pt-3 border-bottom-0">
 										<li>Всего объявлений: <a href="#" class="text-success">14</a></li>
 										<li>Зарегистрирован: 22.10.2018</li>
 									</ul>
-									<a href="#" class="btn btn-success btn-block mt-4">Стать кандидатом</a>
+								</div>
+								<div class="alert alert-warning my-3">
 									<div class="text-center">
-										<span class="text-success d-block pt-4 fz_12">Кандидатов на проект: 15</span>
+										<span class="text-success d-block pt-4 fz_15">Кандидатов на проект: <strong>15</strong></span>
+										<a href="#" class="btn btn-success btn-block mt-4 fz_15">Стать кандидатом</a>
 									</div>
 								</div>
 								<div class="text-center py-3">
@@ -324,28 +326,14 @@
 										<div id="tab-3" class="p-3 border-light border rounded-bottom tabe_panel_js">
 											<div class="comments_list">
 												<div class="one_comment">
-													<h4 class="mb-1"><a href="#">Миша</a></h4>
-													<p class="mb-1">Основной коммент</p>
-													<div class="comment_footer form-row align-items-center mt-3 mt-sm-0">
-														<span class="col-12 col-sm-auto pb-3 pb-sm-0">7 октября 2018 г. 12:07</span>
-														<span class="col-12 col-sm-auto d-inline-flex align-items-center">
-															<i class="icn icn-reviews fz_9 pr-1 mt-1 text-danger"></i>
-															<a href="#" class="text_underline">Ответить</a>
-														</span>
-														<div class="col-12 col-sm-auto rait_comment d-flex align-items-center pt-2 pt-sm-0">
-															<a href="#" class="icn icn-thumbs-down pr-1 text_muted mt-1"></a>
-															<div class="alert alert-danger px-1 py-0 mb-0 mx-2">-10</div>
-															<a href="#" class="icn icn-thumbs-up pr-1 text_muted"></a>
-														</div>
-													</div>
-													<div class="one_comment">
-														<h4 class="mb-1"><a href="#">Гриша</a> <span class="font-weight-normal text_muted">,ответил <a href="#" class="text_muted">Мише</a></span></h4>
-														<p class="mb-1"> Суб_коммент</p>
+													<div class="comment_content">
+														<h4 class="mb-1"><a href="#">Миша</a></h4>
+														<p class="mb-1">Основной коммент</p>
 														<div class="comment_footer form-row align-items-center mt-3 mt-sm-0">
 															<span class="col-12 col-sm-auto pb-3 pb-sm-0">7 октября 2018 г. 12:07</span>
 															<span class="col-12 col-sm-auto d-inline-flex align-items-center">
 																<i class="icn icn-reviews fz_9 pr-1 mt-1 text-danger"></i>
-																<a href="#" class="text_underline">Ответить</a>
+																<a href="#" class="text_underline answer_js">Ответить</a>
 															</span>
 															<div class="col-12 col-sm-auto rait_comment d-flex align-items-center pt-2 pt-sm-0">
 																<a href="#" class="icn icn-thumbs-down pr-1 text_muted mt-1"></a>
@@ -353,40 +341,269 @@
 																<a href="#" class="icn icn-thumbs-up pr-1 text_muted"></a>
 															</div>
 														</div>
-													</div>
-													<div class="one_comment">
-														<h4 class="mb-1">Гость</h4>
-														<p class="mb-1"><a href="#">Мища</a> , Суб_коммент Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt vero porro, laborum non nam nobis ex debitis totam, tenetur molestias distinctio quae aut sint officiis voluptate? Eveniet, voluptatum fugit consectetur!</p>
-														<div class="comment_footer form-row align-items-center mt-3 mt-sm-0">
-															<span class="col-12 col-sm-auto pb-3 pb-sm-0">7 октября 2018 г. 12:07</span>
-															<span class="col-12 col-sm-auto d-inline-flex align-items-center">
-																<i class="icn icn-reviews fz_9 pr-1 mt-1 text-danger"></i>
-																<a href="#" class="text_underline">Ответить</a>
-															</span>
-															<div class="col-12 col-sm-auto rait_comment d-flex align-items-center pt-2 pt-sm-0">
-																<a href="#" class="icn icn-thumbs-down pr-1 text_muted mt-1 active"></a>
-																<div class="alert alert-success px-1 py-0 mb-0 mx-2">+10</div>
-																<a href="#" class="icn icn-thumbs-up pr-1 text_muted"></a>
+														<!-- form add start -->
+														<div class="comment_form border-top pt-3 mt-3 comment_form_js">
+															<div class="form-row">
+																<div class="col-12 col-md-12 col-lg-7">
+																	<div class="form-row">
+																		<div class="col-12 col-sm-6 col-md-12 col-lg-6">
+																			<div class="form-group">
+																				<label for="asd">Email</label>
+																				<input type="text" class="form-control" id="asd">
+																			</div>
+																		</div>
+																		<div class="col-12 col-sm-6 col-md-12 col-lg-6">
+																			<div class="form-group">
+																				<label>Город</label>
+																				<select class="present" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+																					<option value="v5">Город</option>
+																					<option value="v6">Lonsectetur adipisicing elit. Velit temporibus labore, quaerat aut. Doloribus repellendus sit placeat officiis delectus quae neque, libero, reprehenderit hic nihil ab, quibusdam aut labore laudantium.</option>
+																				</select>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label for="exampleFormControlTextarea1">Комментарий <span class="text-danger">*</span></label>
+																		<textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+																	</div>
+																	<div class="row align-items-center">
+																		<div class="col-auto">
+																			<button class="btn btn-success btn_small">Отправить</button>
+																		</div>
+																		<div class="col-auto">
+																			<a href="#" class="btn-link text-muted text_underline form_close_js">Отменить</a>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-12 col-lg-5 order-first order-lg-last d-none d-md-block">
+																	<div class="alert alert-warning">
+																		<p class="mb-1">Пользователи, оставляющие комментарии, несут полную правовую ответственность за их содержание.</p>
+																		<p class="mb-1">Информация об IP-адресах сохраняется.</p>
+																		<p class="mb-1"><strong>В комментариях запрещено:</strong></p>
+																		<p class="mb-1">- Использовать нецензурные выражения, оскорбления и угрозы;</p>
+																		<p class="mb-1">- Публиковать адреса, телефоны и ссылки, содержащие прямую рекламу;</p>
+																		<p class="mb-1">- Обсуждать цену товара в разных регионах сети DNS и её изменение;</p>
+																		<p class="mb-1">- Писать отвлеченные от темы и бессмысленные комментарии.</p>
+																	</div>
+																</div>
 															</div>
 														</div>
+														<!-- form add END -->
 													</div>
-												</div>
-												<div class="one_comment">
-													<h4 class="mb-1">Гость</h4>
-													<p class="mb-1">Основной коммент</p>
-													<div class="comment_footer form-row align-items-center mt-3 mt-sm-0">
-														<span class="col-12 col-sm-auto pb-3 pb-sm-0">7 мая 2018 г. 12:07</span>
-														<span class="col-12 col-sm-auto d-inline-flex align-items-center">
-															<i class="icn icn-reviews fz_9 pr-1 mt-1 text-danger"></i>
-															<a href="#" class="text_underline">Ответить</a>
-														</span>
-														<div class="col-12 col-sm-auto rait_comment d-flex align-items-center pt-2 pt-sm-0">
-															<a href="#" class="icn icn-thumbs-down pr-1 text_muted mt-1"></a>
-															<div class="alert alert-danger px-1 py-0 mb-0 mx-2">-10</div>
-															<a href="#" class="icn icn-thumbs-up pr-1 text_muted active"></a>
+													<div class="one_comment">
+														<div class="comment_content">
+															<h4 class="mb-1"><a href="#">Гриша</a> <span class="font-weight-normal text_muted">,ответил <a href="#" class="text_muted">Мише</a></span></h4>
+															<p class="mb-1"> Суб_коммент</p>
+															<div class="comment_footer form-row align-items-center mt-3 mt-sm-0">
+																<span class="col-12 col-sm-auto pb-3 pb-sm-0">7 октября 2018 г. 12:07</span>
+																<span class="col-12 col-sm-auto d-inline-flex align-items-center">
+																	<i class="icn icn-reviews fz_9 pr-1 mt-1 text-danger"></i>
+																	<a href="#" class="text_underline answer_js">Ответить</a>
+																</span>
+																<div class="col-12 col-sm-auto rait_comment d-flex align-items-center pt-2 pt-sm-0">
+																	<a href="#" class="icn icn-thumbs-down pr-1 text_muted mt-1"></a>
+																	<div class="alert alert-danger px-1 py-0 mb-0 mx-2">-10</div>
+																	<a href="#" class="icn icn-thumbs-up pr-1 text_muted"></a>
+																</div>
+															</div>
+															<!-- form add start -->
+														<div class="comment_form border-top pt-3 mt-3 comment_form_js">
+															<div class="form-row">
+																<div class="col-12 col-md-12 col-lg-7">
+																	<div class="form-row">
+																		<div class="col-12 col-sm-6 col-md-12 col-lg-6">
+																			<div class="form-group">
+																				<label for="asdw">Email</label>
+																				<input type="text" class="form-control" id="asdw">
+																			</div>
+																		</div>
+																		<div class="col-12 col-sm-6 col-md-12 col-lg-6">
+																			<div class="form-group">
+																				<label>Город</label>
+																				<select class="present" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+																					<option value="v5">Город</option>
+																					<option value="v6">Lonsectetur adipisicing elit. Velit temporibus labore, quaerat aut. Doloribus repellendus sit placeat officiis delectus quae neque, libero, reprehenderit hic nihil ab, quibusdam aut labore laudantium.</option>
+																				</select>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label for="exampleFormControlTextarea1e">Комментарий <span class="text-danger">*</span></label>
+																		<textarea class="form-control" id="exampleFormControlTextarea1e" rows="6"></textarea>
+																	</div>
+																	<div class="row align-items-center">
+																		<div class="col-auto">
+																			<button class="btn btn-success btn_small">Отправить</button>
+																		</div>
+																		<div class="col-auto">
+																			<a href="#" class="btn-link text-muted text_underline form_close_js">Отменить</a>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-12 col-lg-5 order-first order-lg-last d-none d-md-block">
+																	<div class="alert alert-warning">
+																		<p class="mb-1">Пользователи, оставляющие комментарии, несут полную правовую ответственность за их содержание.</p>
+																		<p class="mb-1">Информация об IP-адресах сохраняется.</p>
+																		<p class="mb-1"><strong>В комментариях запрещено:</strong></p>
+																		<p class="mb-1">- Использовать нецензурные выражения, оскорбления и угрозы;</p>
+																		<p class="mb-1">- Публиковать адреса, телефоны и ссылки, содержащие прямую рекламу;</p>
+																		<p class="mb-1">- Обсуждать цену товара в разных регионах сети DNS и её изменение;</p>
+																		<p class="mb-1">- Писать отвлеченные от темы и бессмысленные комментарии.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<!-- form add END -->
 														</div>
 													</div>
+													<div class="one_comment">
+														<div class="comment_content">
+															<h4 class="mb-1">Гость</h4>
+															<p class="mb-1"><a href="#">Мища</a> , Суб_коммент Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt vero porro, laborum non nam nobis ex debitis totam, tenetur molestias distinctio quae aut sint officiis voluptate? Eveniet, voluptatum fugit consectetu...</p>
+															<span class="d-block mt-n2 pb-2"><a href="#" class="text_muted text_underline">Развернуть</a></span>
+															<div class="comment_footer form-row align-items-center mt-3 mt-sm-0">
+																<span class="col-12 col-sm-auto pb-3 pb-sm-0">7 октября 2018 г. 12:07</span>
+																<span class="col-12 col-sm-auto d-inline-flex align-items-center">
+																	<i class="icn icn-reviews fz_9 pr-1 mt-1 text-danger"></i>
+																	<a href="#" class="text_underline answer_js">Ответить</a>
+																</span>
+																<div class="col-12 col-sm-auto rait_comment d-flex align-items-center pt-2 pt-sm-0">
+																	<a href="#" class="icn icn-thumbs-down pr-1 text_muted mt-1 active"></a>
+																	<div class="alert alert-success px-1 py-0 mb-0 mx-2">+10</div>
+																	<a href="#" class="icn icn-thumbs-up pr-1 text_muted"></a>
+																</div>
+															</div>
+															<!-- form add start -->
+														<div class="comment_form border-top pt-3 mt-3 comment_form_js">
+															<div class="form-row">
+																<div class="col-12 col-md-12 col-lg-7">
+																	<div class="form-row">
+																		<div class="col-12 col-sm-6 col-md-12 col-lg-6">
+																			<div class="form-group">
+																				<label for="asdc">Email</label>
+																				<input type="text" class="form-control" id="asdc">
+																			</div>
+																		</div>
+																		<div class="col-12 col-sm-6 col-md-12 col-lg-6">
+																			<div class="form-group">
+																				<label>Город</label>
+																				<select class="present" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+																					<option value="v5">Город</option>
+																					<option value="v6">Lonsectetur adipisicing elit. Velit temporibus labore, quaerat aut. Doloribus repellendus sit placeat officiis delectus quae neque, libero, reprehenderit hic nihil ab, quibusdam aut labore laudantium.</option>
+																				</select>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label for="exampleFormControlTextarea1w">Комментарий <span class="text-danger">*</span></label>
+																		<textarea class="form-control" id="exampleFormControlTextarea1w" rows="6"></textarea>
+																	</div>
+																	<div class="row align-items-center">
+																		<div class="col-auto">
+																			<button class="btn btn-success btn_small">Отправить</button>
+																		</div>
+																		<div class="col-auto">
+																			<a href="#" class="btn-link text-muted text_underline form_close_js">Отменить</a>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-12 col-lg-5 order-first order-lg-last d-none d-md-block">
+																	<div class="alert alert-warning">
+																		<p class="mb-1">Пользователи, оставляющие комментарии, несут полную правовую ответственность за их содержание.</p>
+																		<p class="mb-1">Информация об IP-адресах сохраняется.</p>
+																		<p class="mb-1"><strong>В комментариях запрещено:</strong></p>
+																		<p class="mb-1">- Использовать нецензурные выражения, оскорбления и угрозы;</p>
+																		<p class="mb-1">- Публиковать адреса, телефоны и ссылки, содержащие прямую рекламу;</p>
+																		<p class="mb-1">- Обсуждать цену товара в разных регионах сети DNS и её изменение;</p>
+																		<p class="mb-1">- Писать отвлеченные от темы и бессмысленные комментарии.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<!-- form add END -->
+														</div>
+													</div>
+													<span class="d-block pl-4"><a href="#" class="text_muted text_underline">Ещё 100 комментариев</a></span>
 												</div>
+												<div class="one_comment">
+													<div class="comment_content">
+														<h4 class="mb-1">Гость</h4>
+														<p class="mb-1">Основной коммент</p>
+														<div class="comment_footer form-row align-items-center mt-3 mt-sm-0">
+															<span class="col-12 col-sm-auto pb-3 pb-sm-0">7 мая 2018 г. 12:07</span>
+															<span class="col-12 col-sm-auto d-inline-flex align-items-center">
+																<i class="icn icn-reviews fz_9 pr-1 mt-1 text-danger"></i>
+																<a href="#" class="text_underline answer_js">Ответить</a>
+															</span>
+															<div class="col-12 col-sm-auto rait_comment d-flex align-items-center pt-2 pt-sm-0">
+																<a href="#" class="icn icn-thumbs-down pr-1 text_muted mt-1"></a>
+																<div class="alert alert-danger px-1 py-0 mb-0 mx-2">-10</div>
+																<a href="#" class="icn icn-thumbs-up pr-1 text_muted active"></a>
+															</div>
+														</div>
+														<!-- form add start -->
+														<div class="comment_form border-top pt-3 mt-3 comment_form_js">
+															<div class="form-row">
+																<div class="col-12 col-md-12 col-lg-7">
+																	<div class="form-row">
+																		<div class="col-12 col-sm-6 col-md-12 col-lg-6">
+																			<div class="form-group">
+																				<label for="asda">Email</label>
+																				<input type="text" class="form-control" id="asda">
+																			</div>
+																		</div>
+																		<div class="col-12 col-sm-6 col-md-12 col-lg-6">
+																			<div class="form-group">
+																				<label>Город</label>
+																				<select class="present" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+																					<option value="v5">Город</option>
+																					<option value="v6">Lonsectetur adipisicing elit. Velit temporibus labore, quaerat aut. Doloribus repellendus sit placeat officiis delectus quae neque, libero, reprehenderit hic nihil ab, quibusdam aut labore laudantium.</option>
+																				</select>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label for="exampleFormControlTextarea1w">Комментарий <span class="text-danger">*</span></label>
+																		<textarea class="form-control" id="exampleFormControlTextarea1w" rows="6"></textarea>
+																	</div>
+																	<div class="row align-items-center">
+																		<div class="col-auto">
+																			<button class="btn btn-success btn_small">Отправить</button>
+																		</div>
+																		<div class="col-auto">
+																			<a href="#" class="btn-link text-muted text_underline form_close_js">Отменить</a>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-12 col-lg-5 order-first order-lg-last d-none d-md-block">
+																	<div class="alert alert-warning">
+																		<p class="mb-1">Пользователи, оставляющие комментарии, несут полную правовую ответственность за их содержание.</p>
+																		<p class="mb-1">Информация об IP-адресах сохраняется.</p>
+																		<p class="mb-1"><strong>В комментариях запрещено:</strong></p>
+																		<p class="mb-1">- Использовать нецензурные выражения, оскорбления и угрозы;</p>
+																		<p class="mb-1">- Публиковать адреса, телефоны и ссылки, содержащие прямую рекламу;</p>
+																		<p class="mb-1">- Обсуждать цену товара в разных регионах сети DNS и её изменение;</p>
+																		<p class="mb-1">- Писать отвлеченные от темы и бессмысленные комментарии.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<!-- form add END -->
+													</div>
+												</div>
+											</div>
+											<div class="text-center pt-3 pt-md-5 pager_block">
+												<span class="nav_links d-none d-sm-inline-flex">Предыдущая</span>
+												<ul class="list-unstyled d-inline-flex pager_list">
+													<li><a href="#">1</a></li>
+													<li class="active"><a href="#">2</a></li>
+													<li><a href="#">3</a></li>
+													<li><a href="#">4</a></li>
+													<li><a href="#">5</a></li>
+													<li>...</li>
+													<li><a href="#">12</a></li>
+												</ul>
+												<span class="nav_links d-none d-sm-inline-flex"><a href="#">Следующая</a></span>
 											</div>
 										</div>
 									</div>

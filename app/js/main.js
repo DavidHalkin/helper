@@ -58,5 +58,13 @@ $(document).ready(function(){
 		return false;
 	});
 	
-
+    // add comment 
+    $(".answer_js").click(function(){
+		$(this).parents(".comment_content").find(".comment_form_js").slideDown("fast");
+		return false;
+	});
+	$(".form_close_js").click(function(){
+		$(this).parents(".comment_content").find(".comment_form_js").slideUp("fast");
+		return false;
+	});
 });

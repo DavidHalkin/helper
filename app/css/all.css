@@ -1142,7 +1142,7 @@ select { width: 100%; }
 
 .one_comment h4 { font-size: 14px; line-height: 16px; }
 
-.one_comment .one_comment { border-bottom: 0; margin-top: 15px; padding-bottom: 0; padding-left: 30px; border-top: 1px solid #cfd6de; }
+.one_comment .one_comment { border-bottom: 0; margin-top: 15px; padding-bottom: 0; padding-left: 24px; border-top: 1px solid #cfd6de; }
 
 .one_comment p a { color: #5f6b7b; font-weight: bold; }
 
@@ -1157,5 +1157,11 @@ select { width: 100%; }
 .rait_comment a.icn-thumbs-up.active { color: #38c173; }
 
 .rait_comment .alert { font-size: 12px; line-height: 20px; }
+
+.comment_form { position: relative; display: none; }
+
+.comment_form:before { content: ""; width: 0; height: 0; border-bottom: 10px solid #dee2e6; border-left: 10px solid transparent; border-right: 10px solid transparent; position: absolute; top: -10px; left: 10px; }
+
+.comment_form:after { content: ""; width: 0; height: 0; border-bottom: 9px solid #fff; border-left: 8px solid transparent; border-right: 8px solid transparent; position: absolute; top: -9px; left: 12px; }
 
 /*# sourceMappingURL=all.css.map */
