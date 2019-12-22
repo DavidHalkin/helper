@@ -1164,4 +1164,10 @@ select { width: 100%; }
 
 .comment_form:after { content: ""; width: 0; height: 0; border-bottom: 9px solid #fff; border-left: 8px solid transparent; border-right: 8px solid transparent; position: absolute; top: -9px; left: 12px; }
 
+.fz_16 { font-size: 16px; }
+
+@media (max-width: 991.98px) { .sidebar_menu { display: none; } }
+
+.sidebar_menu .list-group a.active { background: #d7f3e3; color: #1d643c; border-color: #c7eed8; }
+
 /*# sourceMappingURL=all.css.map */

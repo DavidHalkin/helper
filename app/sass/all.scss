@@ -1517,3 +1517,20 @@ select{
 		left: 12px;
 	}
 }
+.fz_16{
+	font-size: 16px;
+}
+.sidebar_menu{
+	@include media-breakpoint-down(md) {
+		display: none;
+	}
+	.list-group{
+		a{
+			&.active{
+				background: #d7f3e3;
+				color: #1d643c;
+				border-color: #c7eed8;
+			}
+		}
+	}
+}

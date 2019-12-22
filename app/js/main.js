@@ -67,4 +67,9 @@ $(document).ready(function(){
 		$(this).parents(".comment_content").find(".comment_form_js").slideUp("fast");
 		return false;
 	});
+	// sidebar menu 2
+	$(".sidebar_toggle_js").click(function(){
+		$(".sidebar_js").slideToggle("fast");
+		return false;
+	});
 });
