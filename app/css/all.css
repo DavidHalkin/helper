@@ -194,6 +194,28 @@ h3, .h3 { font-size: 18px; line-height: 20px; color: #5f6b7b; }
 
 .custom_radio label:hover:before { border-color: #38c173 !important; }
 
+.custom_radio.custom_radio_row { border-bottom: 1px solid #d8dde8; }
+
+.custom_radio.custom_radio_row label { height: 48px; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; padding-right: 15px; padding-left: 35px !important; -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
+
+.custom_radio.custom_radio_row [type="radio"]:not(:checked) + label:before, .custom_radio.custom_radio_row [type="radio"]:checked + label:before { top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); left: 10px; -webkit-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; }
+
+.custom_radio.custom_radio_row [type="radio"]:not(:checked) + label:before { content: none; }
+
+.custom_radio.custom_radio_row [type="radio"]:checked + label:before { width: 14px; height: 9px; background: none; border: 0; border-left: 3px solid !important; border-bottom: 3px solid !important; -webkit-border-radius: 0; border-radius: 0; margin-top: -2px; -webkit-transform: translateY(-50%) rotate(-45deg); -ms-transform: translateY(-50%) rotate(-45deg); transform: translateY(-50%) rotate(-45deg); }
+
+.custom_radio.custom_radio_row span { text-align: right; }
+
+.custom_radio.custom_radio_row span strong { display: block; font-size: 15px; }
+
+.custom_radio.custom_radio_row .text_help { display: none; font-size: 12px; }
+
+.custom_radio.custom_radio_row [type="radio"]:checked + label { background: #38c173 !important; border-bottom-color: #38c173 !important; color: #fff !important; }
+
+.custom_radio.custom_radio_row.low_money [type="radio"]:checked + label { background: #ec8f8e !important; }
+
+.custom_radio.custom_radio_row.low_money [type="radio"]:checked + label .text_help { display: block; }
+
 .btn-outline-success { border-width: 2px; color: #5f6c7c; }
 
 .pager_list { padding: 0 10px; }
@@ -245,6 +267,30 @@ h3, .h3 { font-size: 18px; line-height: 20px; color: #5f6b7b; }
 .fz_9 { font-size: 9px !important; }
 
 .text_muted { color: #ccc; }
+
+.inputfile_custom { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; width: 100%; border: 1px solid #cfd6de; padding: 0 12px; -webkit-border-radius: 8px; border-radius: 8px; cursor: pointer; }
+
+.inputfile_custom .form-control { display: none; }
+
+.inputfile_custom span { display: block; -webkit-box-flex: 1; -webkit-flex-grow: 1; -ms-flex-positive: 1; flex-grow: 1; max-width: 100%; -webkit-flex-basis: 0; -ms-flex-preferred-size: 0; flex-basis: 0; width: 100%; height: 49px; font-size: 16px; color: #5f6b7b; line-height: 49px; }
+
+.inputfile_custom span.withFile { color: #38c173; }
+
+.inputfile_custom span.withFile + em svg { color: #38c173; }
+
+.inputfile_custom em { max-width: 25px; -webkit-box-flex: 0; -webkit-flex: 0 0 25px; -ms-flex: 0 0 25px; flex: 0 0 25px; }
+
+.inputfile_custom em svg { width: 20px; height: 20px; }
+
+body > .jcf-select-select_in_modal { z-index: 1050 !important; }
+
+.list_group_cstm .list-group-item { -webkit-border-radius: 4px !important; border-radius: 4px !important; margin-bottom: 10px; border-top: 1px solid rgba(0, 0, 0, 0.125) !important; }
+
+.list_group_cstm .list-group-item .alert { -webkit-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px; }
+
+.list_group_cstm .btn_dell { position: absolute; top: 5px; right: 10px; }
+
+.btn_dell { width: 12px; height: 12px; }
 
 @font-face { font-family: "Icons"; src: url("../fonts/icons_custom/Icons.eot"); src: url("../fonts/icons_custom/Icons.eot?#iefix") format("eot"), url("../fonts/icons_custom/Icons.woff2") format("woff2"), url("../fonts/icons_custom/Icons.woff") format("woff"), url("../fonts/icons_custom/Icons.ttf") format("truetype"), url("../fonts/icons_custom/Icons.svg#Icons") format("svg"); }
 
