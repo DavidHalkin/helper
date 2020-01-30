@@ -1,3 +1,9 @@
+.navbar {
+	background: #ccc;
+}
+.main_nav{
+	background: rgba(red,.1);
+}
 .header{
 	background: #fff;
 	z-index: 10;
@@ -96,7 +102,11 @@
 				width:270px;
 			}
 			&.dropdown_user{
-				max-width: 170px;
+				@include media-breakpoint-up(lg) {
+					max-width: 160px;
+					flex:0 0 160px;
+					border: 1px solid #000;
+				}
 				.dropdown-menu{
 					overflow: auto;
 					max-height: 200px;
@@ -134,7 +144,6 @@
 			.dropdown-item{
 				padding: 5px 15px !important;
 				font-size: 15px;
-
 				&:hover,&:focus,&:active{
 					color: #38c173;
 					background: none;
@@ -152,18 +161,26 @@
 				max-width: 40px;
 				flex:0 0 40px;
 			}
+			@include media-breakpoint-down(xs) {
+				max-width: 30px;
+				flex:0 0 30px;
+			}
 			img{
 				max-width: 40px;
 				border-radius: 50%;
-				@include media-breakpoint-down(xs) {
-					max-width: 30px;
-				}
+				max-width: 100%;
+				display: block;
+				height: auto;
 			}
 		}
 		.user_name{
 			text-overflow: ellipsis;
 			white-space: nowrap;
 			overflow: hidden;
+			flex-grow: 1;
+flex-basis: 0;
+width: 100%;
+max-width: 100%;
 		}
 	}
 }
