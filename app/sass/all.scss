@@ -1624,3 +1624,95 @@ select{
 .fz_12{
 	font-size: 12px !important;
 }
+.one_gal_list{
+	li{
+		display: none;
+		&:first-child{
+			display: block;
+		}
+	}
+}
+.list_albums{
+	>[class *= "col-"]{
+		.one_gal_list{
+			li{
+				height: 0;
+				padding-top: 100%;
+				position: relative;
+				overflow: hidden;
+				border-radius: 5px;
+				.description_album{
+					background:rgba(#000,.7);
+					position: absolute;
+					width: 100%;
+					bottom: 0;
+					left: 0;
+					z-index: 10;
+					color: #fff;
+					border-radius: 0 0 5px 5px;
+					strong{
+						font-size: 15px;
+						line-height: 17px;
+					}
+					p,span{
+						font-size: 12px;
+						line-height: 14px;
+					}
+				}
+				a{
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					overflow: hidden;
+					border-radius: 5px;
+					img{
+						position: absolute;
+						
+						top: 50%;
+						left: 50%;
+						transform:translate(-50%,-50%);
+						object-fit: cover;
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+.add_new_gal{
+	border: 2px dashed theme-color("success");
+	font-size: 16px;
+	@include media-breakpoint-down(xs) {
+		height: 100px !important;
+	}
+}
+.adit_album{
+	position: absolute;
+	top: -10px !important;
+	right: -10px;
+	left: auto !important;
+	width: 50px !important;
+	height: 50px !important;
+	background: theme-color("danger");
+	.icn{
+		position: absolute;
+		bottom: 5px;
+		left: 13px;
+		color: #fff;
+		font-size: 16px;
+	}
+}
+.col_img_fix{
+	max-width: 80px;
+	flex:0 0 80px;
+}
+.fz_20{
+	font-size: 20px !important;
+	line-height: 22px !important;
+}
+.add_icos{
+	width: 15px;
+}

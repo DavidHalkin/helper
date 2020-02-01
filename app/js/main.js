@@ -19,7 +19,10 @@ $(document).ready(function(){
 			}
 			//return false;
 		});
-
+		// responsive tabs
+		$('#responsiveTabsDemo').responsiveTabs({
+			startCollapsed: 'accordion'
+		});
 	// favorite
 		$(".go_favorite_js a").click(function(){
 			$(this).parents(".item_task").toggleClass("in_favorite");
