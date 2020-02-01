@@ -1644,10 +1644,9 @@ select{
 				.description_album{
 					background:rgba(#000,.7);
 					position: absolute;
-					width: 100%;
+					right: 0;
 					bottom: 0;
 					left: 0;
-					z-index: 10;
 					color: #fff;
 					border-radius: 0 0 5px 5px;
 					strong{
@@ -1689,14 +1688,15 @@ select{
 		height: 100px !important;
 	}
 }
-.adit_album{
+.edit_album{
 	position: absolute;
-	top: -10px !important;
-	right: -10px;
+	top: 0 !important;
+	right: 0;
 	left: auto !important;
-	width: 50px !important;
-	height: 50px !important;
+	width: 40px !important;
+	height: 40px !important;
 	background: theme-color("danger");
+	border-radius: 0 5px 0 5px !important;
 	.icn{
 		position: absolute;
 		bottom: 5px;
@@ -1706,6 +1706,10 @@ select{
 	}
 }
 .col_img_fix{
+	@include media-breakpoint-up(md) {
+		max-width: 110px;
+		flex:0 0 110px;
+	}
 	max-width: 80px;
 	flex:0 0 80px;
 }
@@ -1715,4 +1719,28 @@ select{
 }
 .add_icos{
 	width: 15px;
+}
+.img_none_upload{
+	img{
+		max-width: 51px;
+		margin: 0 auto;
+		display: block;
+	}
+}
+.img_uploaded{
+	height: 120px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	img{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+	}
+}
+.mt_05{
+	margin-top: 3px;
 }

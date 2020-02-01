@@ -330,7 +330,7 @@ body > .jcf-select-select_in_modal { z-index: 1050 !important; }
 
 @font-face { font-family: "Icons"; src: url("../fonts/icons_custom/Icons.eot"); src: url("../fonts/icons_custom/Icons.eot?#iefix") format("eot"), url("../fonts/icons_custom/Icons.woff2") format("woff2"), url("../fonts/icons_custom/Icons.woff") format("woff"), url("../fonts/icons_custom/Icons.ttf") format("truetype"), url("../fonts/icons_custom/Icons.svg#Icons") format("svg"); }
 
-.icn-adres:before, .icn-arrow:before, .icn-attach:before, .icn-bars:before, .icn-bonus:before, .icn-book:before, .icn-building:before, .icn-camera:before, .icn-cash:before, .icn-chat-online:before, .icn-chat:before, .icn-chevron-down:before, .icn-chevron-left:before, .icn-chevron-right:before, .icn-chevron-top:before, .icn-cog:before, .icn-doc:before, .icn-edit:before, .icn-fb:before, .icn-file:before, .icn-gearwheel:before, .icn-google:before, .icn-heart-full:before, .icn-heart:before, .icn-house:before, .icn-loopa:before, .icn-mirror:before, .icn-money:before, .icn-nonimage:before, .icn-notifications:before, .icn-odnoklassniki:before, .icn-ok:before, .icn-other:before, .icn-party:before, .icn-reviews:before, .icn-sign:before, .icn-star:before, .icn-tasks:before, .icn-thumbs-down:before, .icn-thumbs-up:before, .icn-time:before, .icn-tool:before, .icn-trash:before, .icn-user:before, .icn-vk:before, .br-theme-bootstrap-stars .br-widget a:before { font-family: "Icons"; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-style: normal; font-variant: normal; font-weight: normal; text-decoration: none; text-transform: none; line-height: 1; }
+.icn-adres:before, .icn-arrow:before, .icn-attach:before, .icn-bars:before, .icn-bonus:before, .icn-book:before, .icn-building:before, .icn-camera:before, .icn-cash:before, .icn-chat-online:before, .icn-chat:before, .icn-chevron-down:before, .icn-chevron-left:before, .icn-chevron-right:before, .icn-chevron-top:before, .icn-cog:before, .icn-doc:before, .icn-edit:before, .icn-fb:before, .icn-file:before, .icn-gearwheel:before, .icn-google:before, .icn-heart-full:before, .icn-heart:before, .icn-house:before, .icn-loopa:before, .icn-mirror:before, .icn-money:before, .icn-nonimage:before, .icn-notifications:before, .icn-odnoklassniki:before, .icn-ok:before, .icn-other:before, .icn-party:before, .icn-plus:before, .icn-reviews:before, .icn-sign:before, .icn-star:before, .icn-tasks:before, .icn-thumbs-down:before, .icn-thumbs-up:before, .icn-time:before, .icn-tool:before, .icn-trash:before, .icn-user:before, .icn-vk:before, .br-theme-bootstrap-stars .br-widget a:before { font-family: "Icons"; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-style: normal; font-variant: normal; font-weight: normal; text-decoration: none; text-transform: none; line-height: 1; }
 
 .icn-adres:before { content: ""; }
 
@@ -400,27 +400,29 @@ body > .jcf-select-select_in_modal { z-index: 1050 !important; }
 
 .icn-party:before { content: ""; }
 
-.icn-reviews:before { content: ""; }
+.icn-plus:before { content: ""; }
 
-.icn-sign:before { content: ""; }
+.icn-reviews:before { content: ""; }
 
-.icn-star:before { content: ""; }
+.icn-sign:before { content: ""; }
 
-.icn-tasks:before { content: ""; }
+.icn-star:before { content: ""; }
 
-.icn-thumbs-down:before { content: ""; }
+.icn-tasks:before { content: ""; }
 
-.icn-thumbs-up:before { content: ""; }
+.icn-thumbs-down:before { content: ""; }
 
-.icn-time:before { content: ""; }
+.icn-thumbs-up:before { content: ""; }
 
-.icn-tool:before { content: ""; }
+.icn-time:before { content: ""; }
 
-.icn-trash:before { content: ""; }
+.icn-tool:before { content: ""; }
 
-.icn-user:before { content: ""; }
+.icn-trash:before { content: ""; }
 
-.icn-vk:before { content: ""; }
+.icn-user:before { content: ""; }
+
+.icn-vk:before { content: ""; }
 
 .footer { background: #222; border-top: 5px solid #38c173; }
 
@@ -1173,7 +1175,7 @@ select { width: 100%; }
 
 .br-theme-bootstrap-stars .br-widget a { color: #cfd6de; font-size: 30px; margin-right: 15px; }
 
-.br-theme-bootstrap-stars .br-widget a:before { content: ""; }
+.br-theme-bootstrap-stars .br-widget a:before { content: ""; }
 
 .br-theme-bootstrap-stars .br-widget a:last-of-type { margin-right: 0; }
 
@@ -1294,7 +1296,7 @@ select { width: 100%; }
 
 .list_albums > [class*="col-"] .one_gal_list li { height: 0; padding-top: 100%; position: relative; overflow: hidden; -webkit-border-radius: 5px; border-radius: 5px; }
 
-.list_albums > [class*="col-"] .one_gal_list li .description_album { background: rgba(0, 0, 0, 0.7); position: absolute; width: 100%; bottom: 0; left: 0; z-index: 10; color: #fff; -webkit-border-radius: 0 0 5px 5px; border-radius: 0 0 5px 5px; }
+.list_albums > [class*="col-"] .one_gal_list li .description_album { background: rgba(0, 0, 0, 0.7); position: absolute; right: 0; bottom: 0; left: 0; color: #fff; -webkit-border-radius: 0 0 5px 5px; border-radius: 0 0 5px 5px; }
 
 .list_albums > [class*="col-"] .one_gal_list li .description_album strong { font-size: 15px; line-height: 17px; }
 
@@ -1308,14 +1310,24 @@ select { width: 100%; }
 
 @media (max-width: 575.98px) { .add_new_gal { height: 100px !important; } }
 
-.adit_album { position: absolute; top: -10px !important; right: -10px; left: auto !important; width: 50px !important; height: 50px !important; background: #e46463; }
+.edit_album { position: absolute; top: 0 !important; right: 0; left: auto !important; width: 40px !important; height: 40px !important; background: #e46463; -webkit-border-radius: 0 5px 0 5px !important; border-radius: 0 5px 0 5px !important; }
 
-.adit_album .icn { position: absolute; bottom: 5px; left: 13px; color: #fff; font-size: 16px; }
+.edit_album .icn { position: absolute; bottom: 5px; left: 13px; color: #fff; font-size: 16px; }
 
 .col_img_fix { max-width: 80px; -webkit-box-flex: 0; -webkit-flex: 0 0 80px; -ms-flex: 0 0 80px; flex: 0 0 80px; }
+
+@media (min-width: 768px) { .col_img_fix { max-width: 110px; -webkit-box-flex: 0; -webkit-flex: 0 0 110px; -ms-flex: 0 0 110px; flex: 0 0 110px; } }
 
 .fz_20 { font-size: 20px !important; line-height: 22px !important; }
 
 .add_icos { width: 15px; }
+
+.img_none_upload img { max-width: 51px; margin: 0 auto; display: block; }
+
+.img_uploaded { height: 120px; width: 100%; overflow: hidden; position: relative; }
+
+.img_uploaded img { width: 100%; height: 100%; position: absolute; top: 0; left: 0; -o-object-fit: cover; object-fit: cover; }
+
+.mt_05 { margin-top: 3px; }
 
 /*# sourceMappingURL=all.css.map */

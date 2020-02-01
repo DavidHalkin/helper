@@ -122,7 +122,7 @@
 																	<span>20 <span>фото</span></span>
 																</div>
 															</a>
-															<a href="#" class="adit_album" data-toggle="modal" data-target="#edit_album">
+															<a href="#" class="edit_album" data-toggle="modal" data-target="#edit_album">
 																<i class="icn icn-tool"></i>
 															</a>
 														</li>
@@ -155,7 +155,7 @@
 																	<span>20 <span>фото</span></span>
 																</div>
 															</a>
-															<a href="#" class="adit_album" data-toggle="modal" data-target="#edit_album">
+															<a href="#" class="edit_album" data-toggle="modal" data-target="#edit_album">
 																<i class="icn icn-tool"></i>
 															</a>
 														</li>
@@ -188,7 +188,7 @@
 																	<span>20 <span>фото</span></span>
 																</div>
 															</a>
-															<a href="#" class="adit_album" data-toggle="modal" data-target="#edit_album">
+															<a href="#" class="edit_album" data-toggle="modal" data-target="#edit_album">
 																<i class="icn icn-tool"></i>
 															</a>
 														</li>
@@ -285,24 +285,30 @@
 						</button>
 					</div>
 					<div class="modal-body">
-						<div class="row align-items-center">
-							<div class="col-12 col-lg-4 mb-2 mb-lg-4">
-								<label for="dasd" class="mb-0">В какой категории работа:</label>
+						<div class="row">
+							<div class="col-12 col-sm-6">
+								<div class="form-group">
+									<label for="ff1" class="mb-0">Заголовок альбома:</label>
+									<input type="text" class="form-control" id="ff1">
+								</div>
 							</div>
-							<div class="col-12 col-lg-8 mb-4">
-								<select class="present select_in_modal" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}' id="dasd">
-									<option value="v5">Сантехник на час</option>
-									<option value="v54">разраб</option>
-									<option value="v15">проводник</option>
-									<option value="v3">Организаци праздников</option>
-								</select>
+							<div class="col-12 col-sm-6">
+								<div class="form-group">
+									<label for="dasd" class="mb-0">В какой категории была работа:</label>
+									<select class="present select_in_modal" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}' id="dasd">
+										<option value="v5">Сантехник на час</option>
+										<option value="v54">разраб</option>
+										<option value="v15">проводник</option>
+										<option value="v3">Организаци праздников</option>
+									</select>
+								</div>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-12 col-lg-4 mb-2">
-								<span class="d-block mt-2 pt-1">Загрузите фотографии:</span>
+							<div class="col-12 px-4 mb-3 text-center">
+								<div class="or_tag text-center my-3 fz_20"><span class="text-success">Загруженные фотографии</span></div>
 							</div>
-							<div class="col-12 col-lg-8 mb-2">
+							<div class="col-12 mb-2">
 								<div class="form-row mb-3 pb-3">
 									<div class="col-auto">
 										<strong class="d-block mt-2 pt-1 fz_20">1.</strong>
@@ -319,13 +325,18 @@
 											<label for="exampleFormControlTextarea1">Описание для фото:</label>
 											<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Это описание для data-caption в лайтбоксе"></textarea>
 										</div>
-										<div class="custom_radio mt-1">
-											<input id="r117gg" name="radio_group_a" type="radio">
-											<label for="r117gg">Сделать обложкой альбома</label>
+										<div class="custom_radio mt-2">
+											<input id="r117gg" name="radio_group_a" type="radio" checked="">
+											<label for="r117gg">Обложка альбома</label>
 										</div>
 									</div>
-									<div class="col_img_fix px-3">
-										<img src="images/none.png" alt="" class="img-fluid">
+									<div class="d-flex flex-column px-3 col_img_fix">
+										<span class="d-block img_none_upload">
+											<img src="images/none.png" alt="" class="img-fluid">
+										</span>
+										<div class="text-center mt-2">
+											<a href="#" class="btn btn_sm btn-danger"><i class="icn icn-trash fz_20"></i></a>
+										</div>
 									</div>
 								</div>
 								<div class="form-row mb-3 pb-3">
@@ -344,19 +355,24 @@
 											<label for="exampleFormControlTextarea2">Описание для фото:</label>
 											<textarea class="form-control" id="exampleFormControlTextarea2" rows="3">Это описание для data-caption в лайтбоксе</textarea>
 										</div>
-										<div class="custom_radio mt-1">
+										<div class="custom_radio mt-2">
 											<input id="r117ggf" name="radio_group_a" type="radio">
-											<label for="r117ggf">Сделать обложкой альбома</label>
+											<label for="r117ggf">Обложка альбома</label>
 										</div>
 									</div>
-									<div class="col_img_fix px-3">
-										<img src="https://picsum.photos/200/300" alt="" class="img-fluid">
+									<div class="d-flex flex-column px-3 col_img_fix">
+										<span class="d-block img_uploaded">
+											<img src="https://picsum.photos/200/3000" alt="" class="img-fluid">
+										</span>
+										<div class="text-center mt-2">
+											<a href="#" class="btn btn_sm btn-danger"><i class="icn icn-trash fz_20"></i></a>
+										</div>
 									</div>
 								</div>
-								<div class="row">
+								<div class="row justify-content-center">
 									<div class="col-12 col-sm-6">
 										<a href="#" class="btn btn-outline-success btn_sm d-flex align-items-center justify-content-center">
-											<svg class="add_icos mr-2" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-plus fa-w-12"><path fill="currentColor" d="M376 232H216V72c0-4.42-3.58-8-8-8h-32c-4.42 0-8 3.58-8 8v160H8c-4.42 0-8 3.58-8 8v32c0 4.42 3.58 8 8 8h160v160c0 4.42 3.58 8 8 8h32c4.42 0 8-3.58 8-8V280h160c4.42 0 8-3.58 8-8v-32c0-4.42-3.58-8-8-8z" class=""></path></svg>
+											<i class="icn icn-plus mr-2 mt_05 fz_16"></i>
 											<span>Добавить ещё фото</span>
 										</a>
 									</div>
@@ -384,24 +400,35 @@
 						</button>
 					</div>
 					<div class="modal-body">
-						<div class="row align-items-center">
-							<div class="col-12 col-lg-4 mb-2 mb-lg-4">
-								<label for="dasd" class="mb-0">В какой категории работа:</label>
+						<div class="row">
+							<div class="col-12 col-sm-6">
+								<div class="form-group">
+									<label for="ff1u" class="mb-0">Заголовок альбома:</label>
+									<input type="text" class="form-control" id="ff1u">
+								</div>
 							</div>
-							<div class="col-12 col-lg-8 mb-4">
-								<select class="present select_in_modal" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}' id="dasd">
-									<option value="v5">Сантехник на час</option>
-									<option value="v54">разраб</option>
-									<option value="v15">проводник</option>
-									<option value="v3">Организаци праздников</option>
-								</select>
+							<div class="col-12 col-sm-6">
+								<div class="form-group">
+									<label for="dasdu" class="mb-0">В какой категории была работа:</label>
+									<select class="present select_in_modal" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}' id="dasdu">
+										<option value="v5">Сантехник на час</option>
+										<option value="v54">разраб</option>
+										<option value="v15">проводник</option>
+										<option value="v3">Организаци праздников</option>
+									</select>
+								</div>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-12 col-lg-4 mb-2">
-								<span class="d-block mt-2 pt-1">Загрузите фотографии:</span>
+							<div class="col-12 px-4 mb-3 text-center">
+								<div class="or_tag text-center my-3 fz_20"><span class="text-success">Загрузите фотографии</span></div>
 							</div>
-							<div class="col-12 col-lg-8 mb-2">
+							<div class="col-12">
+								<div class="alert alert-danger text-center">
+									<p class="mb-0">Вы не можете больше добавить фото, довольствуйтесь малым или купить <a href="#">аккаунт про</a></p>
+								</div>
+							</div>
+							<div class="col-12 mb-2">
 								<div class="form-row mb-3 pb-3">
 									<div class="col-auto">
 										<strong class="d-block mt-2 pt-1 fz_20">1.</strong>
@@ -412,19 +439,21 @@
 											<em class="align-self-center">
 												<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="upload" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-upload fa-w-16"><path fill="currentColor" d="M452 432c0 11-9 20-20 20s-20-9-20-20 9-20 20-20 20 9 20 20zm-84-20c-11 0-20 9-20 20s9 20 20 20 20-9 20-20-9-20-20-20zm144-48v104c0 24.3-19.7 44-44 44H44c-24.3 0-44-19.7-44-44V364c0-24.3 19.7-44 44-44h124v-99.3h-52.7c-35.6 0-53.4-43.1-28.3-68.3L227.7 11.7c15.6-15.6 40.9-15.6 56.6 0L425 152.4c25.2 25.2 7.3 68.3-28.3 68.3H344V320h124c24.3 0 44 19.7 44 44zM200 188.7V376c0 4.4 3.6 8 8 8h96c4.4 0 8-3.6 8-8V188.7h84.7c7.1 0 10.7-8.6 5.7-13.7L261.7 34.3c-3.1-3.1-8.2-3.1-11.3 0L109.7 175c-5 5-1.5 13.7 5.7 13.7H200zM480 364c0-6.6-5.4-12-12-12H344v24c0 22.1-17.9 40-40 40h-96c-22.1 0-40-17.9-40-40v-24H44c-6.6 0-12 5.4-12 12v104c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12V364z" class=""></path></svg>
 											</em>
-											<input class="form-control inputfile_js" required id="az3" name="passport1"  type="file">
+											<input class="form-control inputfile_js" required id="a3u" name="passport1"  type="file">
 										</label>
 										<div class="form-group mb-1">
-											<label for="exampleFormControlTextarea1z">Описание для фото:</label>
-											<textarea class="form-control" id="exampleFormControlTextarea1z" rows="3" placeholder="Это описание для data-caption в лайтбоксе"></textarea>
+											<label for="exampleFormControlTextarea1u">Описание для фото:</label>
+											<textarea class="form-control" id="exampleFormControlTextarea1u" rows="3" placeholder="Это описание для data-caption в лайтбоксе"></textarea>
 										</div>
-										<div class="custom_radio mt-1">
-											<input id="r117ggz" name="radio_group_a" type="radio">
-											<label for="r117ggz">Сделать обложкой альбома</label>
+										<div class="custom_radio mt-2">
+											<input id="r117ggu" name="radio_group_b" type="radio"  checked="">
+											<label for="r117ggu">Обложка альбома</label>
 										</div>
 									</div>
-									<div class="col_img_fix px-3 d-flex flex-column justify-content-between">
-										<img src="images/none.png" alt="" class="img-fluid">
+									<div class="d-flex flex-column px-3 col_img_fix">
+										<span class="d-block img_none_upload">
+											<img src="images/none.png" alt="" class="img-fluid">
+										</span>
 										<div class="text-center mt-2">
 											<a href="#" class="btn btn_sm btn-danger"><i class="icn icn-trash fz_20"></i></a>
 										</div>
@@ -440,37 +469,37 @@
 											<em class="align-self-center">
 												<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="upload" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-upload fa-w-16"><path fill="currentColor" d="M452 432c0 11-9 20-20 20s-20-9-20-20 9-20 20-20 20 9 20 20zm-84-20c-11 0-20 9-20 20s9 20 20 20 20-9 20-20-9-20-20-20zm144-48v104c0 24.3-19.7 44-44 44H44c-24.3 0-44-19.7-44-44V364c0-24.3 19.7-44 44-44h124v-99.3h-52.7c-35.6 0-53.4-43.1-28.3-68.3L227.7 11.7c15.6-15.6 40.9-15.6 56.6 0L425 152.4c25.2 25.2 7.3 68.3-28.3 68.3H344V320h124c24.3 0 44 19.7 44 44zM200 188.7V376c0 4.4 3.6 8 8 8h96c4.4 0 8-3.6 8-8V188.7h84.7c7.1 0 10.7-8.6 5.7-13.7L261.7 34.3c-3.1-3.1-8.2-3.1-11.3 0L109.7 175c-5 5-1.5 13.7 5.7 13.7H200zM480 364c0-6.6-5.4-12-12-12H344v24c0 22.1-17.9 40-40 40h-96c-22.1 0-40-17.9-40-40v-24H44c-6.6 0-12 5.4-12 12v104c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12V364z" class=""></path></svg>
 											</em>
-											<input class="form-control inputfile_js" required id="zza3ff" name="passport1"  type="file">
+											<input class="form-control inputfile_js" required id="a3ffu" name="passport1"  type="file">
 										</label>
 										<div class="form-group mb-1">
-											<label for="exampleFormControlTextarea2zzz">Описание для фото:</label>
-											<textarea class="form-control" id="exampleFormControlTextarea2zzz" rows="3">Это описание для data-caption в лайтбоксе</textarea>
+											<label for="exampleFormControlTextarea2u">Описание для фото:</label>
+											<textarea class="form-control" id="exampleFormControlTextarea2u" rows="3">Это описание для data-caption в лайтбоксе</textarea>
 										</div>
-										<div class="custom_radio mt-1">
-											<input id="r117ggfxx" name="radio_group_a" type="radio">
-											<label for="r117ggfxx">Сделать обложкой альбома</label>
+										<div class="custom_radio mt-2">
+											<input id="r117ggfu" name="radio_group_b" type="radio">
+											<label for="r117ggfu">Обложка альбома</label>
 										</div>
 									</div>
-									<div class="col_img_fix px-3 d-flex flex-column justify-content-between">
-										<img src="https://picsum.photos/200/300" alt="" class="img-fluid">
+									<div class="d-flex flex-column px-3 col_img_fix">
+										<span class="d-block img_uploaded">
+											<img src="https://picsum.photos/200/300" alt="" class="img-fluid">
+										</span>
 										<div class="text-center mt-2">
 											<a href="#" class="btn btn_sm btn-danger"><i class="icn icn-trash fz_20"></i></a>
 										</div>
 									</div>
 								</div>
-								<div class="row">
+								<div class="row justify-content-center">
 									<div class="col-12 col-sm-6">
 										<a href="#" class="btn btn-outline-success btn_sm d-flex align-items-center justify-content-center">
-											<svg class="add_icos mr-2" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-plus fa-w-12"><path fill="currentColor" d="M376 232H216V72c0-4.42-3.58-8-8-8h-32c-4.42 0-8 3.58-8 8v160H8c-4.42 0-8 3.58-8 8v32c0 4.42 3.58 8 8 8h160v160c0 4.42 3.58 8 8 8h32c4.42 0 8-3.58 8-8V280h160c4.42 0 8-3.58 8-8v-32c0-4.42-3.58-8-8-8z" class=""></path></svg>
+											<i class="icn icn-plus mr-2 mt_05 fz_16"></i>
 											<span>Добавить ещё фото</span>
 										</a>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="alert alert-danger text-center mb-0">
-							<p class="mb-0">Вы не можете больше добавить фото, довольствуйтесь малым или купить <a href="#">аккаунт про</a></p>
-						</div>
+						
 					</div>
 					<div class="p-3 border-top">
 						<div class="row justify-content-center">
