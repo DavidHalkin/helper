@@ -505,6 +505,26 @@ h3,.h3{
 			}
 		}
 	}
+	&.checkbox_custom_link{
+		border: 1px solid #cfd6de;
+		border-radius: 5px;
+		line-height: 0;
+		label{
+			padding: 8px 8px 8px 38px !important;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			max-width: 230px;
+			overflow: hidden;
+			&:before{
+				left: 8px !important;
+				top: 6px !important;
+			}
+			&:after{
+				left: 14px !important;
+				top: 12px !important;
+			}
+		}
+	}
 }
 .lh_16{
 	line-height: 16px !important;

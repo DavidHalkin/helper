@@ -5,6 +5,11 @@ $(document).ready(function(){
 
 	// });
 	jcf.replace(customSelect);
+
+	// mask tell
+	$(".tell_mask").inputmask({ mask: "+7-99-999-99"});
+	// tooltips
+	$('[data-toggle="tooltip"]').tooltip();
 	// sidebar menu
 		$(".active .link_drop_js").parent().find(".drop_js").slideDown("fast");
 		$(".link_drop_js").click(function(){

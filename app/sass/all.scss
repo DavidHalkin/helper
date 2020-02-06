@@ -411,15 +411,33 @@ select{
 		flex:0 0 100%;
 	}
 }
-.badge_pro{
-	padding: 0 16px;
-	border-radius: 8px;
+a.badge_pro,span.badge_pro{
+	padding: 0 10px;
+	border-radius: 5px;
 	background: #f4ca64;
-	color: #5c4815 !important;
+	color: darken(theme-color("success"),15%) !important;
 	font-size: 12px;
-	line-height: 25px;
+	line-height: 18px;
 	display: inline-block;
 	font-weight: 500;
+	transition: all 0.3s ease;
+	border: 1px solid theme-color("warning");
+	&:hover{
+		text-decoration: none;
+		background: theme-color("success");
+		border-color: darken(theme-color("success"),10%);
+		color: #fff !important;
+	}
+}
+span.badge_pro{
+	&:hover{
+		color: darken(theme-color("success"),15%) !important;
+		border-color: theme-color("warning") !important;
+		background: #f4ca64 !important;
+	}
+}
+.fz_14{
+	font-size: 14px !important;
 }
 .item_task_one{
 	padding: 15px;
@@ -1712,6 +1730,28 @@ select{
 	}
 	max-width: 80px;
 	flex:0 0 80px;
+	&.avatar_user{
+		@include media-breakpoint-up(md) {
+			height: 94px;
+		}
+		overflow: hidden;
+		height: 64px;
+		span{
+			position: relative;
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		img{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform:translate(-50%,-50%);
+			object-fit: cover;
+		}
+	}
 }
 .fz_20{
 	font-size: 20px !important;
@@ -1743,4 +1783,28 @@ select{
 }
 .mt_05{
 	margin-top: 3px;
+}
+.img_2fa{
+	max-width: 120px;
+	padding: 15px;
+	border: 1px solid theme-color("success");
+	border-radius: 5px;
+	display: inline-block;
+}
+.mt_11{
+	margin-top: 11px !important;
+}
+.nav_pills_cstm{
+	li{
+		a{
+			&.active{
+				background: theme-color("success") !important;
+			}
+		}
+	}
+}
+.list_cat_checkboxs{
+	li{
+		padding: 4px 8px 4px 0;
+	}
 }
