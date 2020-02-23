@@ -1360,4 +1360,22 @@ span.badge_pro:hover { color: #278650 !important; border-color: #caa53d !importa
 
 .list_cat_checkboxs li { padding: 4px 8px 4px 0; }
 
+.alert_cont { margin-top: 80px; }
+
+@media (max-width: 991.98px) { .alert_cont { margin-top: 55px; } }
+
+.alert_cont .chat_main_holder { margin-top: 0; max-height: 100%; }
+
+@media (max-width: 991.98px) { .alert_cont .chat_main_holder .col_chat_txt_header h2 { font-size: 20px; line-height: 22px; } }
+
+.chat_modal_modification .return_profile_link { margin-top: 70px; }
+
+.chat_modal_modification .return_profile_link a { position: relative; }
+
+.chat_modal_modification .return_profile_link a .icn_reverse { position: absolute; top: 50%; left: 10px; -webkit-transform: scale(-1, 1) translateY(-50%); -ms-transform: scale(-1, 1) translateY(-50%); transform: scale(-1, 1) translateY(-50%); margin-top: 1px; }
+
+.chat_modal_modification .chat_main_holder { margin-top: 0; height: -webkit-calc(100vh - 120px); height: calc(100vh - 120px); }
+
+.fz_10 { font-size: 10px !important; }
+
 /*# sourceMappingURL=all.css.map */
