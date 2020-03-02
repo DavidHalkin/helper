@@ -109,62 +109,65 @@
 	@if $filename == mirror {
 		$char: "\E01B";
 	}
-	@if $filename == money {
+	@if $filename == mob {
 		$char: "\E01C";
 	}
-	@if $filename == nonimage {
+	@if $filename == money {
 		$char: "\E01D";
 	}
-	@if $filename == notifications {
+	@if $filename == nonimage {
 		$char: "\E01E";
 	}
-	@if $filename == odnoklassniki {
+	@if $filename == notifications {
 		$char: "\E01F";
 	}
-	@if $filename == ok {
+	@if $filename == odnoklassniki {
 		$char: "\E020";
 	}
-	@if $filename == other {
+	@if $filename == ok {
 		$char: "\E021";
 	}
-	@if $filename == party {
+	@if $filename == other {
 		$char: "\E022";
 	}
-	@if $filename == plus {
+	@if $filename == party {
 		$char: "\E023";
 	}
-	@if $filename == reviews {
+	@if $filename == plus {
 		$char: "\E024";
 	}
-	@if $filename == sign {
+	@if $filename == reviews {
 		$char: "\E025";
 	}
-	@if $filename == star {
+	@if $filename == sign {
 		$char: "\E026";
 	}
-	@if $filename == tasks {
+	@if $filename == star {
 		$char: "\E027";
 	}
-	@if $filename == thumbs-down {
+	@if $filename == tasks {
 		$char: "\E028";
 	}
-	@if $filename == thumbs-up {
+	@if $filename == thumbs-down {
 		$char: "\E029";
 	}
-	@if $filename == time {
+	@if $filename == thumbs-up {
 		$char: "\E02A";
 	}
-	@if $filename == tool {
+	@if $filename == time {
 		$char: "\E02B";
 	}
-	@if $filename == trash {
+	@if $filename == tool {
 		$char: "\E02C";
 	}
-	@if $filename == user {
+	@if $filename == trash {
 		$char: "\E02D";
 	}
-	@if $filename == vk {
+	@if $filename == user {
 		$char: "\E02E";
+	}
+	@if $filename == vk {
+		$char: "\E02F";
 	}
 
 	@return $char;
@@ -261,6 +264,9 @@
 }
 .icn-mirror {
 	@include icn(mirror);
+}
+.icn-mob {
+	@include icn(mob);
 }
 .icn-money {
 	@include icn(money);

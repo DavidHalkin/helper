@@ -426,10 +426,15 @@ h3,.h3{
  	}
 }
 .checkbox_custom{
+	position: relative;
   [type="checkbox"]:not(:checked),
   [type="checkbox"]:checked {
     position: absolute;
-    left: -9999px;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
   }
   [type="checkbox"]:not(:checked) + label,
   [type="checkbox"]:checked + label {

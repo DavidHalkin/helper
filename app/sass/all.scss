@@ -28,9 +28,9 @@ body {
 .main{
 	padding-top: 56px;
 	padding-bottom: 50px;
-	@include media-breakpoint-down(xs) {
-		padding-top: 46px;
-	}
+	// @include media-breakpoint-down(xs) {
+	// 	padding-top: 46px;
+	// }
 	@include media-breakpoint-down(md)  {
 		padding-bottom: 0;
 	}
@@ -1135,10 +1135,29 @@ span.badge_pro{
 		top: 2px;
 	}
 }
+.selected_category_tittle{
+
+}
 .one_step{
 	&:first-of-type{
 		.title_step{
 			border-top: 0;
+			h3{display: none;}
+		}
+	}
+	&:first-of-type{
+		&.step_done{
+			.title_step{
+				h2{
+					padding-bottom: 5px;
+				}
+				h3{
+					display: block;
+					padding-left: 27px;
+					font-size: 15px;
+					line-height: 17px;
+				}
+			}
 		}
 	}
 	.title_step{
@@ -1848,4 +1867,12 @@ span.badge_pro{
 }
 .fz_10{
 	font-size: 10px !important;
+}
+.datepickers-container{
+	.datepicker{
+		display: none;
+		&.active{
+			display: block;
+		}
+	}
 }
