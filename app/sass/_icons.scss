@@ -139,35 +139,38 @@
 	@if $filename == reviews {
 		$char: "\E025";
 	}
-	@if $filename == sign {
+	@if $filename == settings {
 		$char: "\E026";
 	}
-	@if $filename == star {
+	@if $filename == sign {
 		$char: "\E027";
 	}
-	@if $filename == tasks {
+	@if $filename == star {
 		$char: "\E028";
 	}
-	@if $filename == thumbs-down {
+	@if $filename == tasks {
 		$char: "\E029";
 	}
-	@if $filename == thumbs-up {
+	@if $filename == thumbs-down {
 		$char: "\E02A";
 	}
-	@if $filename == time {
+	@if $filename == thumbs-up {
 		$char: "\E02B";
 	}
-	@if $filename == tool {
+	@if $filename == time {
 		$char: "\E02C";
 	}
-	@if $filename == trash {
+	@if $filename == tool {
 		$char: "\E02D";
 	}
-	@if $filename == user {
+	@if $filename == trash {
 		$char: "\E02E";
 	}
-	@if $filename == vk {
+	@if $filename == user {
 		$char: "\E02F";
+	}
+	@if $filename == vk {
+		$char: "\E030";
 	}
 
 	@return $char;
@@ -294,6 +297,9 @@
 }
 .icn-reviews {
 	@include icn(reviews);
+}
+.icn-settings {
+	@include icn(settings);
 }
 .icn-sign {
 	@include icn(sign);

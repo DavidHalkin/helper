@@ -106,6 +106,7 @@ gulp.task('scripts', function() {
 		'bower_components/jquery-bar-rating/dist/jquery.barrating.min.js',
 		'bower_components/inputmask/dist/jquery.inputmask.min.js',
 		'bower_components/responsive-tabs/js/jquery.responsiveTabs.min.js',
+		'bower_components/sticky-sidebar/src/sticky-sidebar.js',
 		])
 		// .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 		// .pipe(uglify()) // Сжимаем JS файл

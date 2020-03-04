@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<link rel="stylesheet" href="css/custom_bootstrap.css">
+		<link rel="stylesheet" href="css/libs.min.css">
+		<link rel="stylesheet" href="css/all.css">		
+		<title>#</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="w1">
+				<div class="header">
+					<div class="centered_wrapper">
+						<nav class="navbar p-0">
+							<a class="navbar-brand" href="#"><img src="images/logo.svg" alt="" class="img-fluid"></a>
+							<a href="#" class="btn btn-light px-2 px-lg-3 px-xl-5 btn_small d-none d-sm-block">Создать задание</a>
+							<ul class="list-unstyled m-0 list_enter d-flex ml-auto align-items-center">
+								<li><a href="#" data-toggle="modal" data-target="#logIn">Войти</a></li>
+								<li><a href="#">Регистрация</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="main">
+					<div class="promo_block" style="background: url('images/home.jpg');">
+						<div class="centered_wrapper">
+							<div class="row">
+								<div class="col-md-9">
+									<h1>Cервис поиска и размещения объявлений об услугах по всей России</h1>
+									<p>Более 100 000 проверенных специалистов для выполнения ваших бытовых или бизнес задач</p>
+									<ul class="list-unstyled m-0 d-flex flex-wrap  list_func">
+										<li>
+											<a href="#" class="d-block p-4">
+												<strong>Найти исполнителя</strong>
+												<i class="icn icn-loopa"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="d-block p-4">
+												<strong>Стать исполнителем</strong>
+												<i class="icn icn-arrow"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="d-block p-4">
+												<strong>Создать задание</strong>
+												<i class="icn icn-doc"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="search_bar search_bar_panel py-3 search_bar_sticky_js">
+						<div class="centered_wrapper">
+							<div class="row no-gutters holder_overlay holder_overlay_js">
+								<div class="col">
+									<div class="input-group">
+										<div class="input-group-prepend i_g_p_drop d-none d-lg-block">
+											<div class="dropdown">
+												<a class="btn btn_white dropdown-toggle " href="#" role="button" id="dropdownMenuLink_h" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<span class="text-truncate d-block">Это категории Это категории Это категории Это категории</span>
+												</a>
+												<div class="dropdown-menu dropdown_menu_long" aria-labelledby="dropdownMenuLink_h">
+													<a class="dropdown-item" href="#">Это категории</a>
+													<a class="dropdown-item" href="#">Another action</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+													<a class="dropdown-item" href="#">Lorem ipsum dolor sit amet</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+												</div>
+											</div>
+										</div>
+										<span class="d-none align-items-center px-3 back_toggler bg-danger back_toggler_js">
+											<button type="button" class="close" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</span>
+										<input type="text" class="form-control text-truncate rounded-0 mix_rounded input_overlay_js" placeholder="Поиск по объявлениям" value="" id="test_input_search">
+									</div>
+								</div>
+								<div class="col-auto d-flex d-lg-none">
+									<a href="#" class="btn btn-danger btn_settings d-flex flex-column justify-content-center btn_settings_js">
+										<i class="icn icn-settings"></i>
+									</a>
+								</div>
+								<div class="col-2 d-none d-lg-flex">
+									<a href="#" class="d-flex align-items-center pl-2 pr-4  pseudo_select dropdown_toggle" data-toggle="modal" data-target="#region_modal">
+										<span class="text-truncate">По всей России По всей России По всей России По всей Россииw</span>
+									</a>
+								</div>
+								<div class="col-2 d-none d-lg-flex"  data-toggle="modal" data-target="#map_modal">
+									<a href="#" class="d-flex align-items-center pl-2 pr-4  pseudo_select dropdown_toggle">
+										<span class="text-truncate">Радиус (100 км) / Район</span>
+									</a>
+								</div>
+								<div class="col-auto d-none d-md-block">
+									<button class="btn btn-success rounded_right btn-block px-5">Найти</button>
+								</div>
+							</div>
+							<div class="row mt-3 d-none d-lg-flex">
+								<div class="col-auto">
+									<div class="custom_radio">
+										<input id="xxx1" name="k1" type="radio" checked="">
+										<label for="xxx1">Объявления</label>
+									</div>
+								</div>
+								<div class="col-auto">
+									<div class="custom_radio">
+										<input id="xxx11" name="k1" type="radio">
+										<label for="xxx11">Исполнители</label>
+									</div>
+								</div>
+							</div>
+							<!-- filter for tablets -->
+							<div class="mobile_filter p-3 d-block d-lg-none mobile_filter_js">
+								<h5 class="styled_title text-white mb-4 pb-2"><span>Фильтр поиска</span></h5>
+								<button type="button" class="close close_filter close_filter_js" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<div class="row mb-3">
+									<div class="col-auto">
+										<div class="custom_radio">
+											<input id="xxx12" name="k12" type="radio" checked="">
+											<label for="xxx12">Объявления</label>
+										</div>
+									</div>
+									<div class="col-auto">
+										<div class="custom_radio">
+											<input id="xxx112" name="k12" type="radio">
+											<label for="xxx112">Исполнители</label>
+										</div>
+									</div>
+								</div>
+								<div class="mb-3">
+									<select class="present present_in_sidebar" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+										<option value="v5">Выберите категорию</option>
+										<option value="v54">Выберите категорию</option>
+										<option value="v15">Выберите категорию</option>
+										<option value="v52">3Выберите категорию</option>
+										<option value="v3">Выберите категорию</option>
+										<option value="v556">Выберите категорию</option>
+										<option value="v6">Lonsectetur adipisicing elit. Velit temporibus labore, quaerat aut. Doloribus repellendus sit placeat officiis delectus quae neque, libero, reprehenderit hic nihil ab, quibusdam aut labore laudantium.</option>
+										<option value="v6">Lonsectetur adipisicing elit. Velit temporibus labore, quaerat aut. Doloribus repellendus sit placeat officiis delectus quae neque, libero, reprehenderit hic nihil ab, quibusdam aut labore laudantium.</option>
+										<option value="v6">Lonsectetur adipisicing elit. Velit temporibus labore, quaerat aut. Doloribus repellendus sit placeat officiis delectus quae neque, libero, reprehenderit hic nihil ab, quibusdam aut labore laudantium.</option>
+									</select>
+								</div>
+								<div class="mb-3">
+									<input type="text" class="form-control" value="" placeholder="Выберите город" id="test_mob">
+								</div>
+								<div class="input-group mb-1">
+									<input type="text" class="form-control" placeholder="Цена,от:">
+									<div class="input-group-append">
+										<div class="input-group-text">Руб.</div>
+									</div>
+								</div>
+								<div class="input-group mb-4">
+									<input type="text" class="form-control" placeholder="Цена,до:">
+									<div class="input-group-append">
+										<div class="input-group-text">Руб.</div>
+									</div>
+								</div>
+								<h5 class="mb-3 text-white">Сортировать:</h5>
+								<div class="list_cat">
+									<div class="custom_radio">
+										<input id="r117m" name="radio_group_y" type="radio" checked="">
+										<label for="r117m">По умолчанию</label>
+									</div>
+									<div class="custom_radio">
+										<input id="r118m" name="radio_group_y" type="radio">
+										<label for="r118m">По дате</label>
+									</div>
+									<div class="custom_radio">
+										<input id="r119m" name="radio_group_y" type="radio">
+										<label for="r119m">Дешевле</label>
+									</div>
+									<div class="custom_radio">
+										<input id="r11qm" name="radio_group_y" type="radio">
+										<label for="r11qm">Дороже</label>
+									</div>
+									<div class="custom_radio">
+										<input id="r11wm" name="radio_group_y" type="radio">
+										<label for="r11wm">По удаленности</label>
+									</div>
+								</div>
+								<div class="py-3">
+									<button class="btn btn-success fz_14 btn-block">Показать 879 308 объявлений </button>
+								</div>
+							</div>
+							<!-- filter for tablets END-->
+						</div>
+						<span class="input_overlay input_overlay_parent_js"></span>
+					</div>
+					<div class="centered_wrapper pt-4">
+						<h2 class="styled_title darken_color mb-5 h1"><span>Баланс счета</span></h2>
+						<div class="row">
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3 services_item">
+								<div class="services_prev">
+									<a href="#"><img src="images/category_images/house.svg" alt=""></a>
+								</div>
+								<h3>Организация праздников</h3>
+								<ul class="list-unstyled m-0 it_list">
+									<li><a href="#">Преподаватели по предметам</a> <span>123123</span></li>
+									<li><a href="#">Преподаватели</a> <span>123123</span></li>
+									<li><a href="#">Преподаватели</a> <span>123123</span></li>
+									<li><a href="#">Преподаватели</a> <span>123123</span></li>
+									<li><a href="#">Преподаватели</a> <span>123123</span></li>
+									<li><a href="#" class="more">Смотреть всех</a></li>
+								</ul>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3 services_item">
+								<div class="services_prev">
+									<a href="#"><img src="images/category_images/book.svg" alt=""></a>
+								</div>
+								<h3><a href="#">Организация праздников</a></h3>
+								<ul class="list-unstyled m-0 it_list">
+									<li><a href="#">Преподаватели по предметам</a> <span>123123</span></li>
+									<li><a href="#">Преподаватели</a> <span>123123</span></li>
+									<li><a href="#">Преподаватели</a> <span>123123</span></li>
+									<li><a href="#">Преподаватели</a> <span>123123</span></li>
+									<li><a href="#">Преподаватели</a> <span>123123</span></li>
+									<li><a href="#" class="more">Смотреть всех</a></li>
+								</ul>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3 services_item">
+								<div class="services_prev">
+									<a href="#"><img src="images/category_images/mirror.svg" alt=""></a>
+								</div>
+								<h3><a href="#">Организация</a></h3>
+								<ul class="list-unstyled m-0 it_list">
+									<li><a href="#">Преподаватели по предметам</a> <span>123123</span></li>
+									<li><a href="#">Преподаватели</a> <span>123123</span></li>
+									<li><a href="#">Преподаватели</a> <span>123123</span></li>
+									<li><a href="#">Преподаватели</a> <span>123123</span></li>
+									<li><a href="#">Преподаватели</a> <span>123123</span></li>
+									<li><a href="#" class="more">Смотреть всех</a></li>
+								</ul>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3 services_item">
+								<div class="services_prev">
+									<a href="#"><img src="images/category_images/party.svg" alt=""></a>
+								</div>
+								<h3><a href="#">Организация</a></h3>
+								<ul class="list-unstyled m-0 it_list">
+									<li><a href="#">Преподаватели по предметам</a> <span>123123</span></li>
+									<li><a href="#">Преподаватели</a> <span>123123</span></li>
+									<li><a href="#" class="more">Смотреть всех</a></li>
+								</ul>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3 services_item">
+								<div class="services_prev">
+									<a href="#"><img src="images/category_images/camera.svg" alt=""></a>
+								</div>
+								<h3><a href="#">Организация</a></h3>
+								<ul class="list-unstyled m-0 it_list">
+									<li><a href="#">Преподаватели по предметам</a> <span>123123</span></li>
+									<li><a href="#">Преподаватели</a> <span>123123</span></li>
+									<li><a href="#" class="more">Смотреть всех</a></li>
+								</ul>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3 services_item">
+								<div class="services_prev">
+									<a href="#"><img src="images/category_images/tool.svg" alt=""></a>
+								</div>
+								<h3><a href="#">Организация</a></h3>
+								<ul class="list-unstyled m-0 it_list">
+									<li><a href="#">Преподаватели по предметам</a> <span>123123</span></li>
+									<li><a href="#">Преподаватели</a> <span>123123</span></li>
+									<li><a href="#" class="more">Смотреть всех</a></li>
+								</ul>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3 services_item">
+								<div class="services_prev">
+									<a href="#"><img src="images/category_images/gearwheel.svg" alt=""></a>
+								</div>
+								<h3><a href="#">Организация</a></h3>
+								<ul class="list-unstyled m-0 it_list">
+									<li><a href="#">Преподаватели по предметам</a> <span>123123</span></li>
+									<li><a href="#">Преподаватели</a> <span>123123</span></li>
+									<li><a href="#" class="more">Смотреть всех</a></li>
+								</ul>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3 services_item">
+								<div class="services_prev">
+									<a href="#"><img src="images/category_images/building.svg" alt=""></a>
+								</div>
+								<h3><a href="#">Организация</a></h3>
+								<ul class="list-unstyled m-0 it_list">
+									<li><a href="#">Преподаватели по предметам</a> <span>123123</span></li>
+									<li><a href="#">Преподаватели</a> <span>123123</span></li>
+									<li><a href="#" class="more">Смотреть всех</a></li>
+								</ul>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3 services_item">
+								<div class="services_prev">
+									<a href="#"><img src="images/category_images/other.svg" alt=""></a>
+								</div>
+								<h3><a href="#">Организация</a></h3>
+								<ul class="list-unstyled m-0 it_list">
+									<li><a href="#">Преподаватели по предметам</a> <span>123123</span></li>
+									<li><a href="#">Преподаватели</a> <span>123123</span></li>
+									<li><a href="#" class="more">Смотреть всех</a></li>
+								</ul>
+							</div>
+							<div class="col-12 col-lg-9 block_now align-self-end">
+								<h3>Начните работу прямо сейчас!</h3>
+								<ul class="list-unstyled m-0 d-flex flex-wrap  list_func">
+									<li>
+										<a href="#" class="d-block p-4">
+											<strong>Найти исполнителя</strong>
+											<i class="icn icn-loopa"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="d-block p-4">
+											<strong>Стать исполнителем</strong>
+											<i class="icn icn-arrow"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="d-block p-4">
+											<strong>Создать задание</strong>
+											<i class="icn icn-doc"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<h2 class="styled_title darken_color mb-5 h1 mt-5"><span>Регионы</span> <a href="#">Смотреть все</a></h2>
+						<ul class="list-unstyled m-0 it_list columns">
+							<li><a href="#">Преподаватели по предметам</a> <span>123123</span></li>
+							<li><a href="#">Преподаватели</a> <span>123123</span></li>
+							<li><a href="#">Преподаватели</a> <span>123123</span></li>
+							<li><a href="#">Преподаватели</a> <span>123123</span></li>
+							<li><a href="#">Преподаватели</a> <span>123123</span></li>
+							<li><a href="#">Преподаватели</a> <span>123123</span></li>
+							<li><a href="#">Преподаватели</a> <span>123123</span></li>
+							<li><a href="#">Преподаватели</a> <span>123123</span></li>
+							<li><a href="#">Преподаватели</a> <span>123123</span></li>
+							<li><a href="#">Преподаватели</a> <span>123123</span></li>
+							<li><a href="#">Преподаватели</a> <span>123123</span></li>
+							<li><a href="#">Преподаватели по предметам</a> <span>123123</span></li>
+							<li><a href="#">Преподаватели</a> <span>123123</span></li>
+							<li><a href="#">Преподаватели</a> <span>123123</span></li>
+							<li><a href="#">Преподаватели</a> <span>123123</span></li>
+							<li><a href="#">Преподаватели</a> <span>123123</span></li>
+							<li><a href="#">Преподаватели</a> <span>123123</span></li>
+							<li><a href="#">Преподаватели</a> <span>123123</span></li>
+							<li><a href="#">Преподаватели</a> <span>123123</span></li>
+							<li><a href="#">Преподаватели</a> <span>123123</span></li>
+							<li><a href="#">Преподаватели по предметам</a> <span>123123</span></li>
+							<li><a href="#">Преподаватели</a> <span>123123</span></li>
+							<li><a href="#">Преподаватели</a> <span>123123</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer pt-3 pt-lg-5">
+				<div class="centered_wrapper pb-3 pb-lg-5">
+					<div class="row text-center text-sm-left">
+						<div class="col-12 col-md-3 order-last order-md-0 pt-4 pt-md-0">
+							<div class="row">
+								<div class="col-12 col-sm-4 col-md-12">
+									<h4 class="text-success">Контакты</h4>
+									<ul class="list-unstyled m-0">
+										<li><a href="tel:+71234567890">+7 123 456 7890</a></li>
+										<li><a href="tel:+71234567890">+7 123 456 7890</a></li>
+										<li><a href="mailto:usermail@gmail.com">usermail@gmail.com</a></li>
+									</ul>
+								</div>
+								<div class="col-12 col-sm-4 col-md-12 pt-4 pt-sm-0">
+									<h4 class="text-success pt-0 pt-md-4">Адрес</h4>
+									<p class="pb-3">г. Москва, ул. Пушкина, 14 <br> БЦ “Аврора”, оф. 301</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-4 col-md-3">
+							<h4 class="text-success">О нас</h4>
+							<ul class="list-unstyled m-0">
+								<li><a href="#">О проекте</a></li>
+								<li><a href="#">Контакты</a></li>
+								<li><a href="#">Мобильное приложение</a></li>
+								<li><a href="#">Дневник помощника</a></li>
+							</ul>
+						</div>
+						<div class="col-12 col-sm-4 col-md-3 pt-4 pt-sm-0">
+							<h4 class="text-success">Как это работает</h4>
+							<ul class="list-unstyled m-0">
+								<li><a href="#">Как заказать услугу</a></li>
+								<li><a href="#">Как стать исполнителем</a></li>
+								<li><a href="#">Последние отзывы</a></li>
+								<li><a href="#">Все категории услуг</a></li>
+								<li><a href="#">Все категории работ</a></li>
+							</ul>
+						</div>
+						<div class="col-12 col-sm-4 col-md-3 pt-4 pt-sm-0">
+							<h4 class="text-success">Помощь</h4>
+							<ul class="list-unstyled m-0">
+								<li><a href="#">Вопросы и ответы</a></li>
+								<li><a href="#">Публичная оферта</a></li>
+								<li><a href="#">Правила конфиденциальности</a></li>
+								<li><a href="#">Служба поддержки</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="copy text-center">
+					<span>2019 Все права защищены</span>
+				</div>
+			</div>
+		</div>
+		<!-- modal logIn -->
+		<div class="modal fade" id="logIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header border-bottom-0">
+						<h1 class="styled_title styled_title_gray darken_color mb-0" id="exampleModalLabel"><span>Авторизация</span></h1>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="text-center">
+							плагин кнопок социалок в этом диве
+						</div>
+						<div class="or_tag text-center my-3"><span class="text-success">или</span></div>
+						<div class="form-group">
+							<label for="q12" class="pl-2 mb-1">E-mail  </label>
+							<input type="text" name="email" class="form-control" id="q12" placeholder="">
+							<span class=" form_error text-danger  " style="display: none">Заполните поле</span>
+						</div>
+						<div class="form-group">
+							<label for="q11" class="pl-2 mb-1">Пароль</label>
+							<input type="password" name="password" class="form-control" id="q11" placeholder="">
+							<span class=" form_error text-danger  " style="display: none">Заполните поле</span>
+						</div>
+						<div class="row justify-content-center pt-2">
+							<div class="col-md-6">
+								<button type="submit" class="btn btn-success btn-block">Войти</button>
+							</div>
+						</div>
+						<div class="text-center pt-3">
+							<p class="fz_12"> <a href="/recovery" class="text_underline">Забыл пароль</a></p>  
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- modal region -->
+		<div class="modal fade" id="region_modal" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header border-bottom-0">
+						<h1 class="styled_title  darken_color mb-0"><span>Город или регион</span></h1>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="mb-4">
+							<input type="text" class="form-control" placeholder="Город или регион" id="tags">
+						</div>
+						<button type="submit" class="btn btn-success btn-block">Показать <strong>1000</strong> объявлений</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- modal map -->
+		<div class="modal fade" id="map_modal" tabindex="-1" role="dialog"  aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header border-bottom-0">
+						<h1 class="styled_title  darken_color mb-0"><span>Радиус или районы</span></h1>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="checkbox_custom pb-3">
+							<input id="r117s" name="ad_group" type="checkbox">
+							<label for="r117s">Дзержинский Дзержинский</label>
+						</div>
+						<div class="checkbox_custom pb-3">
+							<input id="r117sd" name="ad_group" type="checkbox">
+							<label for="r117sd"> Дзержинский</label>
+						</div>
+						<div class="checkbox_custom pb-3">
+							<input id="r117ss" name="ad_group" type="checkbox">
+							<label for="r117ss">Дзержинский</label>
+						</div>
+						<div class="checkbox_custom pb-3">
+							<input id="r117sa" name="ad_group" type="checkbox">
+							<label for="r117sa">Дзержинский</label>
+						</div>
+						<button type="submit" class="btn btn-success btn-block">Показать <strong>1001</strong> объявлений</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/datepicker.min.js"></script>
+		<script src="js/jcf.js"></script>
+		<script src="js/jcf.select.js"></script>
+		<script src="js/jquery.barrating.min.js"></script>
+		<script src="js/jquery.dataTables.min.js"></script>
+		<script src="js/jquery.responsiveTabs.min.js"></script>
+		<script src="js/jquery.fancybox.min.js"></script>
+		<script src="js/jquery.inputmask.min.js"></script>
+		<script src="js/jquery.stickybox.js"></script>
+		<script type="text/javascript">
+            $(document).ready(function() {
+                $('.search_bar_sticky_js').stickyBox({
+                	notStickyBreakpoint: 10,
+                	// stopper: '.footer',
+                	spaceTop: 56
+                });
+            });
+        </script>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.js"></script>
+		<script>
+			$(".search_bar_sticky_js").headroom({
+				"offset": 205,
+				"tolerance": 18,
+				"classes": {
+				"initial": "animated",
+				"pinned": "slideDown",
+				"unpinned": "slideUp"
+				}
+			});
+		</script> -->
+		<script src="js/main.js"></script>
+			<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+			<script>
+				$( function() {
+					var availableTags = [
+						"ActionScript",
+						"AppleScript",
+						"Asp",
+						"BASIC",
+						"C",
+						"C++",
+						"Clojure",
+						"COBOL",
+						"ColdFusion",
+						"Erlang",
+						"Fortran",
+						"Groovy",
+						"Haskell",
+						"Java",
+						"JavaScript",
+						"Lisp",
+						"Perl",
+						"PHP",
+						"Python",
+						"Ruby",
+						"Scala",
+						"Scheme"
+					];
+					$( "#tags" ).autocomplete({
+						source: availableTags
+					});
+				} );
+			</script>
+			<script>
+				$( function() {
+					var available_Tags = [
+						"ActionScript",
+						"AppleScript",
+						"Asp",
+						"BASIC",
+						"C",
+						"C++",
+						"Clojure",
+						"COBOL",
+						"ColdFusion",
+						"Erlang",
+						"Fortran",
+						"Groovy",
+						"Haskell",
+						"Java",
+						"JavaScript",
+						"Lisp",
+						"Perl",
+						"PHP",
+						"Python",
+						"Ruby",
+						"Scala",
+						"Scheme"
+					];
+					$( "#test_mob" ).autocomplete({
+						source: available_Tags
+					});
+				} );
+			</script>
+			<script>
+				$( function() {
+					var available_Tags_search = [
+						"ActionScript",
+						"AppleScript",
+						"Asp",
+						"BASIC",
+						"C",
+						"C++",
+						"Clojure",
+						"COBOL",
+						"ColdFusion",
+						"Erlang",
+						"Fortran",
+						"Groovy",
+						"Haskell",
+						"Java",
+						"JavaScript",
+						"Lisp",
+						"Perl",
+						"PHP",
+						"Python",
+						"Ruby",
+						"Scala",
+						"Scheme"
+					];
+					$( "#test_input_search" ).autocomplete({
+						source: available_Tags_search
+					});
+				} );
+			</script>
+	</body>
+</html>

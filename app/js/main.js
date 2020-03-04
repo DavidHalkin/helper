@@ -80,6 +80,35 @@ $(document).ready(function(){
 		$(".sidebar_js").slideToggle("fast");
 		return false;
 	});
+	// funcs of search
+	$(".input_overlay_js").focus(function(){
+		$(".input_overlay_parent_js").addClass("opened");
+		$(".holder_overlay_js").addClass("active");
+	});
+	$(".input_overlay_parent_js").click(function(){
+		$(this).removeClass("opened");
+		$(".mobile_filter_js").removeClass("active");
+		$(".holder_overlay_js").removeClass("active");
+		$("body").removeClass("body_overflow");
+	});
+	
+	$(".back_toggler_js").click(function(){
+		$(".input_overlay_parent_js").removeClass("opened");
+		$(".holder_overlay_js").removeClass("active");
+	});
+	$(".btn_settings_js").click(function(){
+		$(".mobile_filter_js").toggleClass("active");
+		$(".input_overlay_parent_js").toggleClass("opened");
+		$("body").toggleClass("body_overflow");
+		return false;
+	});
+	
+	$(".close_filter_js").click(function(){
+		$(".mobile_filter_js").toggleClass("active");
+		$(".input_overlay_parent_js").toggleClass("opened");
+		$("body").toggleClass("body_overflow");
+		return false;
+	});
 });
 
 // custom input file
