@@ -1027,6 +1027,8 @@ body >  .jcf-select-select_in_modal{
 		}
 		&:focus{
 			border-right-color: theme-color("success");
+			z-index: 2;
+			position: relative;
 		}
 	}
 	.pseudo_select{
@@ -1127,4 +1129,11 @@ body >  .jcf-select-select_in_modal{
 	&:hover{
 		opacity: 1 !important;
 	}
+}
+.ui_widget_holder{
+	position: relative;
+	flex-grow: 1;
+	flex-basis: 0;
+	width: 100%;
+	max-width: 100%;
 }
