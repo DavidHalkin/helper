@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 		<link rel="stylesheet" href="css/custom_bootstrap.css">
 		<link rel="stylesheet" href="css/libs.min.css">
 		<link rel="stylesheet" href="css/all.css">		
@@ -62,18 +63,18 @@
 					</div>
 				</div>
 				<div class="main">
-					<div class="search_bar py-3">
+					<div class="search_bar search_bar_panel py-3 search_bar_sticky_js">
 						<div class="centered_wrapper">
-							<div class="form-row">
-								<div class="form-group col-12 col-lg-7 mb-3 mb-lg-0">
-									<div class="input-group input_group_xs_different">
-										<div class="input-group-prepend i_g_p_drop">
+							<div class="row no-gutters holder_overlay holder_overlay_js">
+								<div class="col">
+									<div class="input-group">
+										<div class="input-group-prepend i_g_p_drop d-none d-lg-block">
 											<div class="dropdown">
-												<a class="btn btn_white dropdown-toggle " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-													<span class="text-truncate d-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatem atque quasi debitis earum quos in esse obcaecati, non deleniti, dolorem quam tempora amet sunt officiis corporis magnam eveniet tempore?</span>
+												<a class="btn btn_white dropdown-toggle " href="#" role="button" id="dropdownMenuLink_h" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<span class="text-truncate d-block">Это категории Это категории Это категории Это категории</span>
 												</a>
-												<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-													<a class="dropdown-item" href="#">Action</a>
+												<div class="dropdown-menu dropdown_menu_long" aria-labelledby="dropdownMenuLink_h">
+													<a class="dropdown-item" href="#">Это категории</a>
 													<a class="dropdown-item" href="#">Another action</a>
 													<a class="dropdown-item" href="#">Something else here</a>
 													<a class="dropdown-item" href="#">Something else here</a>
@@ -82,23 +83,149 @@
 													<a class="dropdown-item" href="#">Lorem ipsum dolor sit amet</a>
 													<a class="dropdown-item" href="#">Something else here</a>
 													<a class="dropdown-item" href="#">Something else here</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+													<a class="dropdown-item" href="#">Something else here</a>
 												</div>
 											</div>
 										</div>
-										<input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Поиск по объявлениям">
+										<span class="d-none align-items-center px-3 back_toggler bg-danger back_toggler_js">
+											<button type="button" class="close" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</span>
+										<div class="ui_widget_holder">
+											<input type="text" class="form-control text-truncate rounded-0 mix_rounded input_overlay_js" placeholder="Поиск по объявлениям" value="" id="test_input_search">
+										</div>
 									</div>
 								</div>
-								<div class="form-group col-md-6 col-lg-3 mb-3 mb-md-0">
-									<select class="present" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
-										<option value="v5">30 км</option>
+								
+								<div class="col-2 d-none d-lg-flex">
+									<a href="#" class="d-flex align-items-center pl-2 pr-4  pseudo_select dropdown_toggle" data-toggle="modal" data-target="#region_modal">
+										<span class="text-truncate">По всей России По всей России По всей России По всей Россииw</span>
+									</a>
+								</div>
+								<div class="col-2 d-none d-xl-flex">
+									<a href="#" class="d-flex align-items-center pl-2 pr-4  pseudo_select dropdown_toggle" data-toggle="modal" data-target="#map_modal">
+										<span class="text-truncate">Радиус (100 км) / Район</span>
+									</a>
+								</div>
+								<div class="col-auto d-flex">
+									<a href="#" class="btn btn-danger btn_settings d-flex flex-column justify-content-center btn_settings_js">
+										<i class="icn icn-settings"></i>
+									</a>
+								</div>
+								<div class="col-auto d-none d-md-block">
+									<button class="btn btn-success rounded_right btn-block px-5">Найти</button>
+								</div>
+							</div>
+							<div class="row mt-3 d-none d-lg-flex">
+								<div class="col-auto">
+									<div class="custom_radio">
+										<input id="xxx1" name="k1" type="radio" checked="">
+										<label for="xxx1">Объявления</label>
+									</div>
+								</div>
+								<div class="col-auto">
+									<div class="custom_radio">
+										<input id="xxx11" name="k1" type="radio">
+										<label for="xxx11">Исполнители</label>
+									</div>
+								</div>
+							</div>
+							<!-- filter for tablets -->
+							<div class="mobile_filter p-3 mobile_filter_js">
+								<h5 class="styled_title text-white mb-4 pb-2"><span>Фильтр поиска</span></h5>
+								<button type="button" class="close close_filter close_filter_js" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<div class="row mb-3">
+									<div class="col-auto">
+										<div class="custom_radio">
+											<input id="xxx12" name="k12" type="radio" checked="">
+											<label for="xxx12">Объявления</label>
+										</div>
+									</div>
+									<div class="col-auto">
+										<div class="custom_radio">
+											<input id="xxx112" name="k12" type="radio">
+											<label for="xxx112">Исполнители</label>
+										</div>
+									</div>
+								</div>
+								<div class="mb-3">
+									<select class="present present_in_sidebar" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+										<option value="v5">Выберите категорию</option>
+										<option value="v54">Выберите категорию</option>
+										<option value="v15">Выберите категорию</option>
+										<option value="v52">3Выберите категорию</option>
+										<option value="v3">Выберите категорию</option>
+										<option value="v556">Выберите категорию</option>
+										<option value="v6">Lonsectetur adipisicing elit. Velit temporibus labore, quaerat aut. Doloribus repellendus sit placeat officiis delectus quae neque, libero, reprehenderit hic nihil ab, quibusdam aut labore laudantium.</option>
+										<option value="v6">Lonsectetur adipisicing elit. Velit temporibus labore, quaerat aut. Doloribus repellendus sit placeat officiis delectus quae neque, libero, reprehenderit hic nihil ab, quibusdam aut labore laudantium.</option>
 										<option value="v6">Lonsectetur adipisicing elit. Velit temporibus labore, quaerat aut. Doloribus repellendus sit placeat officiis delectus quae neque, libero, reprehenderit hic nihil ab, quibusdam aut labore laudantium.</option>
 									</select>
 								</div>
-								<div class="form-group col-md-6 col-lg-2 m-0">
-									<button class="btn btn-success btn-block">Найти</button>
+								<div class="mb-3">
+									<div class="ui_widget">
+										<input type="text" class="form-control" value="" placeholder="Выберите город" id="test_mob">
+									</div>
+								</div>
+								<div class="mb-3">
+									<div class="ui_widget">
+										<input type="text" class="form-control" value="" placeholder="Радс/Рйн (add autocomplete UI)">
+									</div>
+								</div>
+								<div class="input-group mb-1">
+									<input type="text" class="form-control" placeholder="Цена,от:">
+									<div class="input-group-append">
+										<div class="input-group-text">Руб.</div>
+									</div>
+								</div>
+								<div class="input-group mb-4">
+									<input type="text" class="form-control" placeholder="Цена,до:">
+									<div class="input-group-append">
+										<div class="input-group-text">Руб.</div>
+									</div>
+								</div>
+								<h5 class="mb-3 text-white">Сортировать:</h5>
+								<div class="list_cat">
+									<div class="custom_radio">
+										<input id="r117m" name="radio_group_y" type="radio" checked="">
+										<label for="r117m">По умолчанию</label>
+									</div>
+									<div class="custom_radio">
+										<input id="r118m" name="radio_group_y" type="radio">
+										<label for="r118m">По дате</label>
+									</div>
+									<div class="custom_radio">
+										<input id="r119m" name="radio_group_y" type="radio">
+										<label for="r119m">Дешевле</label>
+									</div>
+									<div class="custom_radio">
+										<input id="r11qm" name="radio_group_y" type="radio">
+										<label for="r11qm">Дороже</label>
+									</div>
+									<div class="custom_radio">
+										<input id="r11wm" name="radio_group_y" type="radio">
+										<label for="r11wm">По удаленности</label>
+									</div>
+								</div>
+								<div class="py-3">
+									<button class="btn btn-success fz_14 btn-block">Показать 879 308 объявлений </button>
 								</div>
 							</div>
+							<!-- filter for tablets END-->
 						</div>
+						<span class="input_overlay input_overlay_parent_js"></span>
 					</div>
 					<div class="breadcrumbs_block py-3 py-md-4">
 						<div class="centered_wrapper">
@@ -113,28 +240,6 @@
 						<h2 class="styled_title darken_color mb-4 h1"><span>Объявления в категории: Домашний мастер <em><a href="#">(1355)</a></em></span> </h2>
 						<div class="row">
 							<div class="col-12 col_aside mb-4">
-								<div class="d-block d-lg-none mb-4 min_filter_category">
-									<div class="row align-items-center">
-										<div class="col-12 col-sm-auto mb-3 mb-sm-0">
-											<h3>Фильтр категорий:</h3>
-										</div>
-										<div class="col-12 col-sm minw_0">
-											<select class="present" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
-												<option value="v5">30 км</option>
-												<option value="v5">30 км</option>
-												<option value="v5">30 км</option>
-												<option value="v5">30 км</option>
-												<option value="v5">30 км</option>
-												<option value="v5">30 км</option>
-												<option value="v5">30 км</option>
-												<option value="v5">30 км</option>
-												<option value="v5">30 км</option>
-												<option value="v5">30 км</option>
-												<option value="v6">Lonsectetur adipisicing elit. Velit temporibus labore, quaerat aut. Doloribus repellendus sit placeat officiis delectus quae neque, libero, reprehenderit hic nihil ab, quibusdam aut labore laudantium.</option>
-											</select>
-										</div>
-									</div>
-								</div>
 								<ul class="list-unstyled mb-2 pt-3 list_filter d-none d-lg-block">
 									<li class="active">
 										<a href="#" class="link_drop_js"> Lorem ipsum dolor sit amet, consectetur adipisicing </a>
@@ -187,9 +292,75 @@
 										</div>
 									</li>
 								</ul>
-								<a href="#" class="btn btn-success btn-block">Создать задачу</a>
-								<a href="#" class="btn btn-outline-success btn-block">Стать исполнителем</a>
-
+								<div class="d-none d-lg-block alert alert-warning p-2">
+									<div class="pb-2">
+										<select class="present" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+											<option value="v5">Какой-то select</option>
+											<option value="v6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit temporibus labore, quaerat aut. Doloribus repellendus sit placeat officiis delectus quae neque, libero, reprehenderit hic nihil ab, quibusdam aut labore laudantium.</option>
+										</select>
+									</div>
+									<div class="pb-2">
+										<div class="mb-2">
+											<input type="text" class="form-control" value="" placeholder="Выберите город">
+										</div>
+										<div class="mb-2">
+											<input type="text" class="form-control" value="" placeholder="Выберите радиус">
+										</div>
+									</div>
+									<div class="pb-2">
+										<div class="input-group mb-1">
+											<input type="text" class="form-control" placeholder="Цена,от:">
+											<div class="input-group-append">
+												<div class="input-group-text px-1">Руб.</div>
+											</div>
+										</div>
+										<div class="input-group mb-1">
+											<input type="text" class="form-control" placeholder="Цена,до:">
+											<div class="input-group-append">
+												<div class="input-group-text px-1">Руб.</div>
+											</div>
+										</div>
+									</div>
+									<strong class="d-block pb-2 lh_16">Какойто тайтл:</strong>
+									<div class="row mb-3">
+										<div class="col-auto mb-2">
+											<div class="custom_radio">
+												<input id="xxx12h" name="k12h" type="radio" checked="">
+												<label for="xxx12h">Объявления</label>
+											</div>
+										</div>
+										<div class="col-auto mb-2">
+											<div class="custom_radio">
+												<input id="xxx112h" name="k12h" type="radio">
+												<label for="xxx112h">Исполнители</label>
+											</div>
+										</div>
+									</div>
+									<strong class="d-block pb-2 lh_16">Какойто тайтл Какойто тайтл Какойто тайтл:</strong>
+									<div class="checkbox_custom mb-1">
+										<input type="checkbox" id="qwert">
+										<label for="qwert">Обсуждается с исполнителем</label>
+									</div>
+									<div class="checkbox_custom mb-1">
+										<input type="checkbox" id="qwerta">
+										<label for="qwerta">Обсуждается</label>
+									</div>
+									<div class="checkbox_custom mb-1">
+										<input type="checkbox" id="qwertas">
+										<label for="qwertas">Метро Кукуево</label>
+									</div>
+									<div class="py-2">
+										<button class="btn btn-warning text-white fz_14 btn-block fz_12">Показать 879 308 объявлений </button>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-12 col-sm-6 col-lg-12 mb-2">
+										<a href="#" class="btn btn-success btn-block">Создать задачу</a>
+									</div>
+									<div class="col-12 col-sm-6 col-lg-12">
+										<a href="#" class="btn btn-outline-success btn-block">Стать исполнителем</a>
+									</div>
+								</div>
 								<div class="article_box pt-5 d-none d-lg-block">
 									<h3>Полезные статьи:</h3>
 									<ul class="list-unstyled list_article">
@@ -460,12 +631,163 @@
 				</div>
 			</div>
 		</div>
+				<!-- modal region -->
+		<div class="modal fade" id="region_modal" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header border-bottom-0">
+						<h1 class="styled_title  darken_color mb-0"><span>Город или регион</span></h1>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="mb-4">
+							<input type="text" class="form-control" placeholder="Город или регион" id="tags">
+						</div>
+						<button type="submit" class="btn btn-success btn-block">Показать <strong>1000</strong> объявлений</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- modal map -->
+		<div class="modal fade" id="map_modal" tabindex="-1" role="dialog"  aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header border-bottom-0">
+						<h1 class="styled_title  darken_color mb-0"><span>Радиус или районы</span></h1>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="checkbox_custom pb-3">
+							<input id="r117s" name="ad_group" type="checkbox">
+							<label for="r117s">Дзержинский Дзержинский</label>
+						</div>
+						<div class="checkbox_custom pb-3">
+							<input id="r117sd" name="ad_group" type="checkbox">
+							<label for="r117sd"> Дзержинский</label>
+						</div>
+						<div class="checkbox_custom pb-3">
+							<input id="r117ss" name="ad_group" type="checkbox">
+							<label for="r117ss">Дзержинский</label>
+						</div>
+						<div class="checkbox_custom pb-3">
+							<input id="r117sa" name="ad_group" type="checkbox">
+							<label for="r117sa">Дзержинский</label>
+						</div>
+						<button type="submit" class="btn btn-success btn-block">Показать <strong>1001</strong> объявлений</button>
+					</div>
+				</div>
+			</div>
+		</div>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/datepicker.min.js"></script>
 		<script src="js/jcf.js"></script>
 		<script src="js/jcf.select.js"></script>
 		<script src="js/jquery.barrating.min.js"></script>
-		<script src="js/main.js"></script>
+		<script src="js/jquery.dataTables.min.js"></script>
+		<script src="js/jquery.responsiveTabs.min.js"></script>
+		<script src="js/jquery.fancybox.min.js"></script>
 		<script src="js/jquery.inputmask.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+			<script>
+				$( function() {
+					var availableTags = [
+						"ActionScript",
+						"AppleScript",
+						"Asp",
+						"BASIC",
+						"C",
+						"C++",
+						"Clojure",
+						"COBOL",
+						"ColdFusion",
+						"Erlang",
+						"Fortran",
+						"Groovy",
+						"Haskell",
+						"Java",
+						"JavaScript",
+						"Lisp",
+						"Perl",
+						"PHP",
+						"Python",
+						"Ruby",
+						"Scala",
+						"Scheme"
+					];
+					$( "#tags" ).autocomplete({
+						source: availableTags
+					});
+				} );
+			</script>
+			<script>
+				$( function() {
+					var available_Tags = [
+						"ActionScript",
+						"AppleScript",
+						"Asp",
+						"BASIC",
+						"C",
+						"C++",
+						"Clojure",
+						"COBOL",
+						"ColdFusion",
+						"Erlang",
+						"Fortran",
+						"Groovy",
+						"Haskell",
+						"Java",
+						"JavaScript",
+						"Lisp",
+						"Perl",
+						"PHP",
+						"Python",
+						"Ruby",
+						"Scala",
+						"Scheme"
+					];
+					$( "#test_mob" ).autocomplete({
+						appendTo: $("#test_mob").parent(),
+						source: available_Tags
+					});
+				} );
+			</script>
+			<script>
+				$( function() {
+					var available_Tags_search = [
+						"ActionScript",
+						"AppleScript",
+						"Asp",
+						"BASIC",
+						"C",
+						"C++",
+						"Clojure",
+						"COBOL",
+						"ColdFusion",
+						"Erlang",
+						"Fortran",
+						"Groovy",
+						"Haskell",
+						"Java",
+						"JavaScript",
+						"Lisp",
+						"Perl",
+						"PHP",
+						"Python",
+						"Ruby",
+						"Scala",
+						"Scheme"
+					];
+					$( "#test_input_search" ).autocomplete({
+						appendTo: $("#test_input_search").parent(),
+						source: available_Tags_search
+					});
+				} );
+			</script>
 	</body>
 </html>

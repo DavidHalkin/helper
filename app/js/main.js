@@ -84,22 +84,30 @@ $(document).ready(function(){
 	$(".input_overlay_js").focus(function(){
 		$(".input_overlay_parent_js").addClass("opened");
 		$(".holder_overlay_js").addClass("active");
+
+		$(".search_bar").toggleClass("active");
 	});
 	$(".input_overlay_parent_js").click(function(){
 		$(this).removeClass("opened");
 		$(".mobile_filter_js").removeClass("active");
 		$(".holder_overlay_js").removeClass("active");
 		$("body").removeClass("body_overflow");
+
+		$(".search_bar").toggleClass("active");
 	});
 	
 	$(".back_toggler_js").click(function(){
 		$(".input_overlay_parent_js").removeClass("opened");
 		$(".holder_overlay_js").removeClass("active");
+
+		$(".search_bar").toggleClass("active");
 	});
 	$(".btn_settings_js").click(function(){
 		$(".mobile_filter_js").toggleClass("active");
 		$(".input_overlay_parent_js").toggleClass("opened");
 		$("body").toggleClass("body_overflow");
+
+		$(".search_bar").toggleClass("active");
 		return false;
 	});
 	
@@ -107,10 +115,11 @@ $(document).ready(function(){
 		$(".mobile_filter_js").toggleClass("active");
 		$(".input_overlay_parent_js").toggleClass("opened");
 		$("body").toggleClass("body_overflow");
+
+		$(".search_bar").toggleClass("active");
 		return false;
 	});
 });
-
 // custom input file
 $(function(){  
   $('.inputfile_js').change(function(){

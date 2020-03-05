@@ -55,7 +55,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="search_bar search_bar_panel py-3 search_bar_sticky_js">
+					<div class="search_bar search_bar_panel py-3">
 						<div class="centered_wrapper">
 							<div class="row no-gutters holder_overlay holder_overlay_js">
 								<div class="col">
@@ -99,19 +99,20 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-auto d-flex d-lg-none">
-									<a href="#" class="btn btn-danger btn_settings d-flex flex-column justify-content-center btn_settings_js">
-										<i class="icn icn-settings"></i>
-									</a>
-								</div>
+								
 								<div class="col-2 d-none d-lg-flex">
 									<a href="#" class="d-flex align-items-center pl-2 pr-4  pseudo_select dropdown_toggle" data-toggle="modal" data-target="#region_modal">
 										<span class="text-truncate">По всей России По всей России По всей России По всей Россииw</span>
 									</a>
 								</div>
-								<div class="col-2 d-none d-lg-flex"  data-toggle="modal" data-target="#map_modal">
-									<a href="#" class="d-flex align-items-center pl-2 pr-4  pseudo_select dropdown_toggle">
+								<div class="col-2 d-none d-xl-flex">
+									<a href="#" class="d-flex align-items-center pl-2 pr-4  pseudo_select dropdown_toggle" data-toggle="modal" data-target="#map_modal">
 										<span class="text-truncate">Радиус (100 км) / Район</span>
+									</a>
+								</div>
+								<div class="col-auto d-flex">
+									<a href="#" class="btn btn-danger btn_settings d-flex flex-column justify-content-center btn_settings_js">
+										<i class="icn icn-settings"></i>
 									</a>
 								</div>
 								<div class="col-auto d-none d-md-block">
@@ -133,7 +134,7 @@
 								</div>
 							</div>
 							<!-- filter for tablets -->
-							<div class="mobile_filter p-3 d-block d-lg-none mobile_filter_js">
+							<div class="mobile_filter p-3 mobile_filter_js">
 								<h5 class="styled_title text-white mb-4 pb-2"><span>Фильтр поиска</span></h5>
 								<button type="button" class="close close_filter close_filter_js" aria-label="Close">
 									<span aria-hidden="true">&times;</span>
@@ -166,7 +167,14 @@
 									</select>
 								</div>
 								<div class="mb-3">
-									<input type="text" class="form-control" value="" placeholder="Выберите город" id="test_mob">
+									<div class="ui_widget">
+										<input type="text" class="form-control" value="" placeholder="Выберите город" id="test_mob">
+									</div>
+								</div>
+								<div class="mb-3">
+									<div class="ui_widget">
+										<input type="text" class="form-control" value="" placeholder="Радс/Рйн (add autocomplete UI)">
+									</div>
 								</div>
 								<div class="input-group mb-1">
 									<input type="text" class="form-control" placeholder="Цена,от:">
@@ -527,16 +535,6 @@
 		<script src="js/jquery.responsiveTabs.min.js"></script>
 		<script src="js/jquery.fancybox.min.js"></script>
 		<script src="js/jquery.inputmask.min.js"></script>
-		<script src="js/jquery.stickybox.js"></script>
-		<script type="text/javascript">
-            $(document).ready(function() {
-                $('.search_bar_sticky_js').stickyBox({
-                	notStickyBreakpoint: 10,
-                	// stopper: '.footer',
-                	spaceTop: 56
-                });
-            });
-        </script>
 		<script src="js/main.js"></script>
 			<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 			<script>
@@ -597,6 +595,7 @@
 						"Scheme"
 					];
 					$( "#test_mob" ).autocomplete({
+						appendTo: $("#test_mob").parent(),
 						source: available_Tags
 					});
 				} );

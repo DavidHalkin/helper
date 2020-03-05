@@ -974,7 +974,6 @@ body >  .jcf-select-select_in_modal{
 	border-radius: 0 9px 9px 0;
 }
 .btn_settings{
-	
 	border-radius:0;
 	font-size: 20px;
 	line-height: 1;
@@ -987,24 +986,30 @@ body >  .jcf-select-select_in_modal{
 	}
 }
 .input_overlay {
-	@include media-breakpoint-down(md) {
-		&.opened{
-			display: block;
-			position: fixed;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			background: rgba(#000,.6);
-			z-index: 10;
-		}
+	&.opened{
+		display: block;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		min-height: 100vh;
+		background: rgba(#000,.6);
+		z-index: 10;
 	}
 }
-
+.search_bar{
+	&.active{
+		z-index: 11;
+	}
+}
 .search_bar_panel{
-	z-index: 10;
+	position: sticky;
+	z-index: 5;
 	left: 0;
-	right: 0;
+	top: 56px;
+	// right: 0;
+	width: 100% !important;
 	.i_g_p_drop{
 		flex: 0 0 200px;
 		max-width: 200px;
