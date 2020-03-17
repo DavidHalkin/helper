@@ -73,9 +73,17 @@ a.text_underline:hover { text-decoration: none; }
 
 .budget_inf { min-width: 14px; padding: 0 2px; height: 14px; -webkit-border-radius: 50%; border-radius: 50%; background: #38c173; position: absolute; top: -7px; right: -7px; color: #fff; font-size: 8px; line-height: 14px; text-align: center; display: block; }
 
-.i_g_p_drop .dropdown-menu { width: 270px; }
+.i_g_p_drop .jcf-focus, .i_g_p_drop .jcf-focus * { border-color: #cfd6de !important; }
 
-.i_g_p_drop .dropdown-menu a { white-space: normal; }
+.i_g_p_drop .jcf-select-text { color: #8895a6; }
+
+.i_g_p_drop .jcf-select-drop { width: 250px !important; }
+
+.i_g_p_drop .jcf-select { width: 270px; -webkit-border-radius: 9px 0 0 9px; border-radius: 9px 0 0 9px; border-right: 0 !important; position: relative; z-index: 2; }
+
+.i_g_p_drop .jcf-select .jcf-list-content { max-height: 250px; }
+
+.i_g_p_drop .jcf-select:after { content: ''; width: 1px; height: 30px; background: #e2e6ef; position: absolute; top: 50%; right: 0; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
 
 .i_g_p_drop .dropdown { max-width: 270px; -webkit-box-flex: 0; -webkit-flex: 0 0 270px; -ms-flex: 0 0 270px; flex: 0 0 270px; }
 
@@ -407,6 +415,10 @@ body > .jcf-select-select_in_modal { z-index: 1050 !important; }
 .close_filter:hover { opacity: 1 !important; }
 
 .ui_widget_holder { position: relative; -webkit-box-flex: 1; -webkit-flex-grow: 1; -ms-flex-positive: 1; flex-grow: 1; -webkit-flex-basis: 0; -ms-flex-preferred-size: 0; flex-basis: 0; width: 100%; max-width: 100%; }
+
+.custom_radio [type="radio"]:checked + label .star_list { display: inline-block; }
+
+.custom_radio [type="radio"]:checked + label .star_list i { color: #e46463 !important; }
 
 @font-face { font-family: "Icons"; src: url("../fonts/icons_custom/Icons.eot"); src: url("../fonts/icons_custom/Icons.eot?#iefix") format("eot"), url("../fonts/icons_custom/Icons.woff2") format("woff2"), url("../fonts/icons_custom/Icons.woff") format("woff"), url("../fonts/icons_custom/Icons.ttf") format("truetype"), url("../fonts/icons_custom/Icons.svg#Icons") format("svg"); }
 
