@@ -122,6 +122,7 @@ gulp.task('css-libs', ['sass'], function() {
 		'bower_components/air-datepicker/dist/css/datepicker.min.css',
 		'bower_components/datatables.net-dt/css/jquery.dataTables.min.css',
 		'bower_components/jquery-bar-rating/dist/themes/bootstrap-stars.css',
+		'bower_components/font-awesome/css/all.min.css',
 		// 'bower_components/responsive-tabs/css/responsive-tabs.css',
 		
 		])
