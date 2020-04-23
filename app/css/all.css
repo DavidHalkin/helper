@@ -1474,4 +1474,16 @@ span.badge_pro:hover { color: #278650 !important; border-color: #caa53d !importa
 
 .datepickers-container .datepicker.active { display: block; }
 
+.show_more_link { color: #38c173 !important; position: relative; padding-right: 10px; }
+
+.show_more_link:after { content: ''; width: 7px; height: 7px; position: absolute; top: 50%; left: 100%; border-left: 2px solid #38c173; border-bottom: 2px solid #38c173; -webkit-transform: translateY(-50%) rotate(-45deg); -ms-transform: translateY(-50%) rotate(-45deg); transform: translateY(-50%) rotate(-45deg); margin-top: -1px; }
+
+.show_more_link.active:after { -webkit-transform: translateY(-50%) rotate(135deg); -ms-transform: translateY(-50%) rotate(135deg); transform: translateY(-50%) rotate(135deg); margin-top: 2px; }
+
+.popular_category a { color: #cfd6de; }
+
+.popular_category a:hover { color: #38c173; text-decoration: none; }
+
+.popular_category i { font-size: 35px; }
+
 /*# sourceMappingURL=all.css.map */
