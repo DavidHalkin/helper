@@ -42,5 +42,7 @@
     "gulp-iconfont": "^10.0.1",
     "vinyl-buffer": "^1.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@fortawesome/fontawesome-pro": "^5.13.0"
+  }
 }

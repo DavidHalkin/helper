@@ -1174,3 +1174,20 @@ body >  .jcf-select-select_in_modal{
 		}
 	}
 }
+.loader_ico{
+	.input-group-text{
+		width:60px;
+		position: relative;
+	}
+	i{
+		color: theme-color("success");
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		font-size: 26px;
+		transform:translate(-50%,-50%);
+	}
+}
+.mt_custom_switch{
+	margin-top: 38px;
+}
