@@ -104,6 +104,8 @@ a.text_underline:hover { text-decoration: none; }
 
 .fz_18 { font-size: 18px; line-height: 20px; }
 
+.fz_40 { font-size: 40px; }
+
 .w_150 { width: 150px !important; }
 
 h1, .h1 { font-weight: 500; font-size: 24px; line-height: 26px; }
@@ -425,6 +427,12 @@ body > .jcf-select-select_in_modal { z-index: 1050 !important; }
 .loader_ico i { color: #38c173; position: absolute; top: 50%; left: 50%; font-size: 26px; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
 .mt_custom_switch { margin-top: 38px; }
+
+@media (max-width: 767.98px) { .fa-rotate-sm_90 { -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); } }
+
+.fz_60 { font-size: 60px; line-height: 1; }
+
+@media (max-width: 767.98px) { .fz_sm_25 { font-size: 25px !important; line-height: 27px !important; } }
 
 @font-face { font-family: "Icons"; src: url("../fonts/icons_custom/Icons.eot"); src: url("../fonts/icons_custom/Icons.eot?#iefix") format("eot"), url("../fonts/icons_custom/Icons.woff2") format("woff2"), url("../fonts/icons_custom/Icons.woff") format("woff"), url("../fonts/icons_custom/Icons.ttf") format("truetype"), url("../fonts/icons_custom/Icons.svg#Icons") format("svg"); }
 
@@ -1491,5 +1499,23 @@ span.badge_pro:hover { color: #278650 !important; border-color: #caa53d !importa
 .popular_category a:hover { color: #38c173; text-decoration: none; }
 
 .popular_category i { font-size: 35px; }
+
+.banner_title { -webkit-background-size: cover; background-size: cover; background-repeat: no-repeat; background-position: 50% 50%; position: relative; z-index: 1; }
+
+.banner_title:after { content: ''; z-index: 2; width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: rgba(0, 0, 0, 0.4); }
+
+.banner_title .ban_hlder { min-height: 300px; z-index: 3; }
+
+.banner_title .ban_hlder h1 { font-size: 35px; line-height: 37px; color: #fff; text-shadow: 0 0 7px rgba(0, 0, 0, 0.3); max-width: 100%; margin: 0; }
+
+@media (max-width: 767.98px) { .banner_title .ban_hlder { min-height: 150px; } }
+
+.circle_bg { width: 130px; height: 130px; position: relative; }
+
+.circle_bg i { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+
+.after_orange_color:after { color: #f4b78a; }
+
+.before_green_color:before { color: #38c173; }
 
 /*# sourceMappingURL=all.css.map */

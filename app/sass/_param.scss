@@ -334,6 +334,9 @@ a{
 	font-size: 18px;
 	line-height: 20px;
 }
+.fz_40{
+	font-size: 40px;
+}
 .w_150{
 	width: 150px !important;
 }
@@ -1190,4 +1193,19 @@ body >  .jcf-select-select_in_modal{
 }
 .mt_custom_switch{
 	margin-top: 38px;
+}
+.fa-rotate-sm_90{
+	@include media-breakpoint-down(sm) {
+		transform:rotate(90deg);
+	}
+}
+.fz_60{
+	font-size: 60px;
+	line-height: 1;
+}
+.fz_sm_25{
+	@include media-breakpoint-down(sm) {
+		font-size: 25px !important;
+		line-height: 27px !important;
+	}
 }
