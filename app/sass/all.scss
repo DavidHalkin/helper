@@ -489,6 +489,10 @@ span.badge_pro{
 	.task_prev{
 		max-width: 200px;
 		flex: 0 0 200px;
+		&.ava_prev{
+			max-width: 110px;
+			flex:0 0 110px;
+		}
 		img{
 			max-width: 100%;
 			border-radius: 9px;
@@ -1967,4 +1971,39 @@ span.badge_pro{
 	&:before{
 		color: theme-color("success");
 	}
+}
+.col_100{
+	max-width: 100px;
+	flex:0 0 100px;
+}
+.list_users{
+	h5{
+		font-size: 17px;
+		line-height: 20px;
+		a{
+			color: #5f6b7b;
+			&:hover{
+				text-decoration: none;
+				color: theme-color("success");
+			}
+		}
+	}
+	.name_title{
+		max-width: 40%;
+	}
+	> .row{
+		&:nth-child(even){
+			background: theme-color("gray");
+		}
+	}
+}
+.status_u {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	border: 3px solid #fff;
+	background: #b8c5ce;
 }
