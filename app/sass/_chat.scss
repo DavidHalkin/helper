@@ -142,11 +142,11 @@
 	}
 }
 .user_hld{
-	max-width: 200px;
-	flex:0 0 200px;
+	max-width: 300px;
+	flex:0 0 300px;
 	@include media-breakpoint-down(xs) {
-		max-width: 150px;
-		flex:0 0 150px;
+		max-width: 200px;
+		flex:0 0 200px;
 	}	
 }
 .part_users{
@@ -276,6 +276,8 @@
 		p{
 			line-height: 17px;
 			color: #5f6b7b;
+			word-wrap:break-word;
+			hyphens: auto;
 		}
 	}
 }

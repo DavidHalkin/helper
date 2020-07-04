@@ -684,9 +684,9 @@ body > .jcf-select-select_in_modal { z-index: 1050 !important; }
 
 .part_users_inf p { margin-top: 5px; margin-bottom: 0; font-size: 14px; line-height: 17px; color: #8895a6; }
 
-.user_hld { max-width: 200px; -webkit-box-flex: 0; -webkit-flex: 0 0 200px; -ms-flex: 0 0 200px; flex: 0 0 200px; }
+.user_hld { max-width: 300px; -webkit-box-flex: 0; -webkit-flex: 0 0 300px; -ms-flex: 0 0 300px; flex: 0 0 300px; }
 
-@media (max-width: 575.98px) { .user_hld { max-width: 150px; -webkit-box-flex: 0; -webkit-flex: 0 0 150px; -ms-flex: 0 0 150px; flex: 0 0 150px; } }
+@media (max-width: 575.98px) { .user_hld { max-width: 200px; -webkit-box-flex: 0; -webkit-flex: 0 0 200px; -ms-flex: 0 0 200px; flex: 0 0 200px; } }
 
 .part_users { overflow: auto; height: -webkit-calc(100% - 82px); height: calc(100% - 82px); }
 
@@ -734,7 +734,7 @@ body > .jcf-select-select_in_modal { z-index: 1050 !important; }
 
 .one_mssg .one_mssg_txt .one_mssg_txt_title span { color: #b8c5ce; }
 
-.one_mssg .one_mssg_txt p { line-height: 17px; color: #5f6b7b; }
+.one_mssg .one_mssg_txt p { line-height: 17px; color: #5f6b7b; word-wrap: break-word; -webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto; }
 
 .time_history { border-bottom: 1px solid #e2e6ef; }
 
