@@ -428,11 +428,23 @@ body > .jcf-select-select_in_modal { z-index: 1050 !important; }
 
 .mt_custom_switch { margin-top: 38px; }
 
+a.badge { -webkit-box-shadow: none !important; box-shadow: none !important; }
+
 @media (max-width: 767.98px) { .fa-rotate-sm_90 { -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); } }
 
 .fz_60 { font-size: 60px; line-height: 1; }
 
+.fz_13 { font-size: 13px; }
+
 @media (max-width: 767.98px) { .fz_sm_25 { font-size: 25px !important; line-height: 27px !important; } }
+
+.btn_group_sort .btn { font-weight: normal; }
+
+@media (max-width: 991.98px) { .btn_group_sort .btn { font-size: 11px; padding-left: 6px; padding-right: 6px; } }
+
+@media (max-width: 991.98px) and (max-width: 767.98px) { .btn_group_sort .btn { padding-left: 5px; padding-right: 5px; } }
+
+.prof_name { max-width: 50px; -webkit-box-flex: 0; -webkit-flex: 0 0 50px; -ms-flex: 0 0 50px; flex: 0 0 50px; }
 
 @font-face { font-family: "Icons"; src: url("../fonts/icons_custom/Icons.eot"); src: url("../fonts/icons_custom/Icons.eot?#iefix") format("eot"), url("../fonts/icons_custom/Icons.woff2") format("woff2"), url("../fonts/icons_custom/Icons.woff") format("woff"), url("../fonts/icons_custom/Icons.ttf") format("truetype"), url("../fonts/icons_custom/Icons.svg#Icons") format("svg"); }
 
@@ -1535,5 +1547,21 @@ span.badge_pro:hover { color: #278650 !important; border-color: #caa53d !importa
 .list_users > .row:nth-child(even) { background: #f8f9fb; }
 
 .status_u { position: absolute; bottom: 0; right: 0; width: 24px; height: 24px; -webkit-border-radius: 50%; border-radius: 50%; border: 3px solid #fff; background: #b8c5ce; }
+
+.one_answer { border-top: 1px solid #cfd6de; border-bottom: 1px solid #cfd6de; margin-top: -1px; }
+
+.one_answer:last-child { border-bottom: 0; }
+
+.one_answer:first-child { border-top: 0; }
+
+.one_answer.pro { background: rgba(202, 165, 61, 0.1); padding-left: 16px; padding-right: 16px; margin-left: -16px; margin-right: -16px; }
+
+.one_answer.pro .prof_name { max-width: 70px; -webkit-box-flex: 0; -webkit-flex: 0 0 70px; -ms-flex: 0 0 70px; flex: 0 0 70px; }
+
+.one_answer.pro .name_autor a { font-size: 16px; }
+
+.one_answer.pro .one_answer_content { font-size: 16px; }
+
+.name_autor { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
 
 /*# sourceMappingURL=all.css.map */

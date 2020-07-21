@@ -142,3 +142,34 @@ $(function(){
     return false;
   });  
 });
+
+// sort group buuttons
+var upIcon = '<i class="fal fa-arrow-to-top icon_up"></i>';
+var downIcon = '<i class="fal fa-arrow-to-bottom icon_down"></i> ';
+
+var $buttons = $('.btn_sort_js');
+$buttons.on('click', function(e) {
+var $this = $(this);
+if ($this.hasClass('active')) {
+  if ($this.hasClass('active_up')) {            
+    $this.removeClass('active_up')    
+    $this.find('.icon_up').remove();            
+    
+    $this.append(downIcon);            
+    $this.addClass('active_down')
+  } else if ($this.hasClass('active_down')) {
+    $this.removeClass('active_down')
+    $this.find('.icon_down').remove();            
+    $buttons.removeClass('active')
+  } 
+} else {
+  $buttons.removeClass('active')
+  $buttons.removeClass('active_up')
+  $buttons.removeClass('active_down')
+  $buttons.find('.icon_up, .icon_down').remove();
+  $this.addClass('active')
+  $this.addClass('active_up')            
+  $this.append(upIcon)
+}
+e.preventDefault();
+});

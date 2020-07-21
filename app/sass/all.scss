@@ -2007,3 +2007,40 @@ span.badge_pro{
 	border: 3px solid #fff;
 	background: #b8c5ce;
 }
+.one_answer{
+	border-top: 1px solid theme-color("dark_gray");
+	border-bottom: 1px solid theme-color("dark_gray");
+	margin-top: -1px;
+	&:last-child{
+		border-bottom: 0;
+	}
+	&:first-child{
+		border-top: 0;
+	}
+	&.pro{
+		background: rgba(theme-color("warning"),.1);
+		padding-left: 16px;
+		padding-right: 16px;
+		margin-left: -16px;
+		margin-right: -16px;
+		.prof_name{
+			max-width: 70px;
+			flex:0 0 70px;
+		}
+		.name_autor{
+			a{
+				font-size: 16px;
+			}
+		}
+		.one_answer_content {
+			font-size: 16px;
+		}
+	}
+}
+.name_autor{
+	display: flex;
+	align-items:center;
+	a{
+		// max-width: 200px;
+	}
+}
