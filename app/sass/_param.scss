@@ -42,6 +42,10 @@
 body{
 	font: 14px/24px HelveticaNeueCyr, sans-serif;
 	color: #5f6b7b;
+	position: relative;
+}
+html {
+    scroll-behavior: smooth;
 }
 // The Mixin 
 @mixin placeholder_custom{
@@ -1215,6 +1219,7 @@ a.badge{
 		line-height: 27px !important;
 	}
 }
+
 .btn_group_sort{
 	.btn{
 		font-weight: normal;
