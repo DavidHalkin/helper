@@ -599,7 +599,7 @@ a.badge { -webkit-box-shadow: none !important; box-shadow: none !important; }
 
 @media (min-width: 992px) { .header .main_nav .dropdown.dropdown_user > .nav-link { max-width: 170px; } }
 
-.header .main_nav .dropdown.dropdown_user .dropdown-menu { overflow: auto; max-height: 200px; }
+.header .main_nav .dropdown.dropdown_user .dropdown-menu { overflow: auto; max-height: 240px; }
 
 .header .main_nav .dropdown em { font-style: normal; position: relative; margin-right: 5px; }
 
