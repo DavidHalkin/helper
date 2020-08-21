@@ -1,10 +1,8 @@
-$(document).ready(function(){
-	// custom select old
-	var customSelect = $('.present');
-	// jcf.setOptions('Select', {
+// custom select old
+var customSelect = $('.present');
+jcf.replace(customSelect);
 
-	// });
-	jcf.replace(customSelect);
+$(document).ready(function(){
 
 	// mask tell
 	$(".tell_mask").inputmask({ mask: "+7-99-999-99"});
