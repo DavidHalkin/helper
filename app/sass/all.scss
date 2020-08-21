@@ -2132,3 +2132,32 @@ span.badge_pro{
 		word-wrap:break-word;
 	}
 }
+.type_services_tab{
+	position: relative;
+	z-index: 2;
+	li{
+		.nav-link{
+			border: 0;
+		}
+		&.type_success{
+			.nav-link{
+				&.active{
+					background: theme-color-level(success, -10);
+				}
+			}
+		}
+		&.type_warning{
+			.nav-link{
+				&.active{
+					background: theme-color-level(warning, -10);
+					color:darken(theme-color("warning"), 25%);
+				}
+			}
+		}
+	}
+}
+.type_services_content{
+	margin-top: -1px;
+	position: relative;
+	z-index: 0;
+}

@@ -1607,4 +1607,14 @@ span.badge_pro:hover { color: #278650 !important; border-color: #caa53d !importa
 
 .comment_content p { word-wrap: break-word; }
 
+.type_services_tab { position: relative; z-index: 2; }
+
+.type_services_tab li .nav-link { border: 0; }
+
+.type_services_tab li.type_success .nav-link.active { background: #d7f3e3; }
+
+.type_services_tab li.type_warning .nav-link.active { background: #f4edd8; color: #6a561d; }
+
+.type_services_content { margin-top: -1px; position: relative; z-index: 0; }
+
 /*# sourceMappingURL=all.css.map */
