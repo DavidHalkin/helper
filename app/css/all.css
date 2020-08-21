@@ -1605,4 +1605,6 @@ span.badge_pro:hover { color: #278650 !important; border-color: #caa53d !importa
 
 .bg_danger_opacity_9 { background: rgba(228, 100, 99, 0.9) !important; }
 
+.comment_content p { word-wrap: break-word; }
+
 /*# sourceMappingURL=all.css.map */

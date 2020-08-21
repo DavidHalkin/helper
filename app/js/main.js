@@ -128,6 +128,10 @@ $(function(){
       if(this.files.length == 0){
         label.removeClass('withFile').text(label.data('default'));
       }
+	 else if(this.files.length > 1){
+			 
+			label.addClass('withFile').text( this.files.length + ' files');
+	  }
       else{
         var file = this.files[0]; 
         var name = file.name;
@@ -136,8 +140,9 @@ $(function(){
       }
     }
     else{
+		 
       var name = this.value.split("\\");
-	      label.addClass('withFile').text(name[name.length-1]);
+	      label.addClass('withFile').text( name[name.length-1]);
     }
     return false;
   });  
