@@ -264,6 +264,7 @@
 		max-width: 100%;
 		flex-basis: 0;
 		width: 100%;
+		min-width: 0;
 		.one_mssg_txt_title{
 			strong{
 				color: #5f6b7b;
@@ -278,8 +279,12 @@
 			color: #5f6b7b;
 			word-wrap:break-word;
 			hyphens: auto;
+			word-wrap: break-word;
 		}
 	}
+}
+.col_chat_txt {
+	min-width: 0;
 }
 .time_history{
 	border-bottom: 1px solid #e2e6ef;

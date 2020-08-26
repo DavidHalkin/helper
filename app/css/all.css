@@ -744,13 +744,15 @@ a.badge { -webkit-box-shadow: none !important; box-shadow: none !important; }
 
 .one_mssg .one_mssg_img .part_users_img span em { width: 20px; height: 20px; }
 
-.one_mssg .one_mssg_txt { padding-left: 20px; -webkit-box-flex: 1; -webkit-flex-grow: 1; -ms-flex-positive: 1; flex-grow: 1; max-width: 100%; -webkit-flex-basis: 0; -ms-flex-preferred-size: 0; flex-basis: 0; width: 100%; }
+.one_mssg .one_mssg_txt { padding-left: 20px; -webkit-box-flex: 1; -webkit-flex-grow: 1; -ms-flex-positive: 1; flex-grow: 1; max-width: 100%; -webkit-flex-basis: 0; -ms-flex-preferred-size: 0; flex-basis: 0; width: 100%; min-width: 0; }
 
 .one_mssg .one_mssg_txt .one_mssg_txt_title strong { color: #5f6b7b; font-weight: bold; }
 
 .one_mssg .one_mssg_txt .one_mssg_txt_title span { color: #b8c5ce; }
 
-.one_mssg .one_mssg_txt p { line-height: 17px; color: #5f6b7b; word-wrap: break-word; -webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto; }
+.one_mssg .one_mssg_txt p { line-height: 17px; color: #5f6b7b; word-wrap: break-word; -webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto; word-wrap: break-word; }
+
+.col_chat_txt { min-width: 0; }
 
 .time_history { border-bottom: 1px solid #e2e6ef; }
 
