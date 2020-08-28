@@ -1554,6 +1554,8 @@ span.badge_pro:hover { color: #278650 !important; border-color: #caa53d !importa
 
 .status_u { position: absolute; bottom: 0; right: 0; width: 24px; height: 24px; -webkit-border-radius: 50%; border-radius: 50%; border: 3px solid #fff; background: #b8c5ce; }
 
+.answers_list { margin-bottom: -1px; }
+
 .one_answer { border-top: 1px solid #cfd6de; border-bottom: 1px solid #cfd6de; margin-top: -1px; }
 
 .one_answer:last-child { border-bottom: 0; }
