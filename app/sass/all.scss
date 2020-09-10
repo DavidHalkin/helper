@@ -480,12 +480,6 @@ span.badge_pro{
 			color: #e46766;
 		}
 	}
-	// &:first-of-type{
-	// 	padding-top: 0;
-	// }
-	// &:last-of-type{
-	// 	border-bottom: 0;
-	// }
 	.task_prev{
 		max-width: 200px;
 		flex: 0 0 200px;
@@ -508,9 +502,11 @@ span.badge_pro{
 		flex: 0 0 180px;
 	}
 	.task_text{
+		min-width: 0;
 		p{
 			margin: 0;
 			padding-top: 10px;
+			word-wrap: break-word;
 		}
 		h3{
 			margin: 0;
@@ -518,6 +514,7 @@ span.badge_pro{
 			line-height: 22px;
 			color: #5f6b7b;
 			font-weight: 500;
+			word-wrap: break-word;
 			a{
 				color: #5f6b7b;
 				&:hover{
@@ -1055,11 +1052,13 @@ span.badge_pro{
 	}
 }
 .task_title{
+	min-width: 0;
 	.task_title_txt{
 		flex-grow: 1;
 		max-width: 100%;
 		flex-basis: 0;
 		width: 100%;
+		min-width: 0;
 		@include media-breakpoint-down(md) {
 			flex:0 0 100%;
 			max-width: 100%;

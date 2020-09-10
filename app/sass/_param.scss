@@ -354,12 +354,16 @@ h3,.h3{
 	line-height: 20px;
 	color: #5f6b7b;
 }
+.panel_info p{
+	word-wrap: break-word; 
+}
 .gray_light{
 	background: #f8f9fb !important;
 }
 .styled_title{
 	padding-bottom: 16px;
 	position: relative;
+	word-wrap: break-word; 
 	&:after{
 		content: '';
 		bottom: 0;
